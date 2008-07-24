@@ -77,7 +77,7 @@ set laststatus=2
 
 " HOTKEYS
 "
-" map F8 to taggle taglist
+" map F8 to toggle taglist
 nnoremap <silent> <F8> :TlistToggle<CR>
 
 " map ALT-Left and ALT-Right to move between tabs
