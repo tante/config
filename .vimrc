@@ -74,18 +74,55 @@ set linebreak
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L] 
 set laststatus=2 
 
-" in human-language files, automatically format everything at 72 chars:
-" autocmd FileType mail,human set formatoptions+=t textwidth=72
-" Note: Seems like a good idea but messes up posting to s9y so disabled till I
-" find a better way to handle it
 
 " HOTKEYS
 "
 " map F8 to taggle taglist
 nnoremap <silent> <F8> :TlistToggle<CR>
 
+" map ALT-Left and ALT-Right to move between tabs
+map <silent><A-Right> :tabnext<CR>
+map <silent><A-Left> :tabprevious<CR>
+
+" make navigation in wrapped lines more natural
+noremap j gj
+noremap k gk
+
+
 "Spellchecking
 "F10: English, F11: Deutsch, F12: Off
 map <F10> <Esc>:setlocal spell spelllang=en<CR>
 map <F11> <Esc>:setlocal spell spelllang=de<CR>
 map <F12> <Esc>:setlocal nospell<CR>
+
+" now some python stuff
+" a few things that also work:
+" :Pydoc re.sub gives the corresponding docs
+
+" enable real code completion for python
+" (needs vim to be build with python support)
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+" remap the CTRL-X,CTRL-O to F2 
+inoremap <F2> <C-x><C-o>
+
+" make "gf" go to a python import
+" this means that when you hover over a python import, vim automatically
+" opens that file
+python << EOF
+import os
+import sys
+import vim
+for p in sys.path:
+    if os.path.isdir(p):
+        vim.command(r"set path+=%s" % (p.replace(" ", r"\ ")))
+EOF
+
+" use the ctags file from my .vim folder from the standart library
+" this way I can jump into the code of a library function by hitting 
+" CTRL+] and get back by hitting CTRL+t
+set tags+=$HOME/.vim/tags/python.ctags
+" now set CTRL-Right to dive into the library and CTRL-Left to come back
+map <silent><C-Left> <C-T>
+map <silent><C-Right> <C-]>
+
+
