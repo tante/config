@@ -137,9 +137,13 @@ function! EatChar(pat)
     return (c =~ a:pat) ? '' : c
 endfunc
 
+"general
 iabbr _me Jürgen Geuter (tante@the-gay-bar.com)=EatChar('\s')<CR>
 iabbr _t  <C-R>=strftime("%H:%M")<CR><C-R>=EatChar('\s')<CR>
 iabbr _d  <C-R>=strftime("%a, %d %b %Y")<CR><C-R>=EatChar('\s')<CR>
 iabbr _dt <C-R>=strftime("%a, %d %b %Y %H:%M")<CR><C-R>=EatChar('\s')<CR>
+
+"python
+iabbr _pyutf # -*- coding: utf8 -*-
 
 
