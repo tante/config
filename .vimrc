@@ -77,7 +77,11 @@ set laststatus=2
 " HOTKEYS
 "
 " map F8 to toggle taglist
-nnoremap <silent> <F8> :TlistToggle<CR>
+nnoremap <silent><F8> :TlistToggle<CR>
+
+" map <F4> to clear highlighted searches
+" (those markers can be really irritating ;))
+map <silent><F4> :nohlsearch<CR>
 
 " map ALT-Left and ALT-Right to move between tabs
 map <silent><A-Right> :tabnext<CR>
