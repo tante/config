@@ -5,7 +5,6 @@ set nocompatible
 " <Ctrl>_ automatically closes XML tags then. Useful.
 autocmd Filetype html,xhtml,xml,xsl source ~/.vim/scripts/closetag.vim
 let g:closetag_html_style=1
-source ~/.vim/scripts/closetag.vim
 
 " dictionaries for words
 set dictionary=/usr/share/dict/words,/usr/share/dict/web2,/usr/share/dict/extra.words
@@ -106,8 +105,8 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 inoremap <F2> <C-x><C-o>
 
 " make "gf" go to a python import
-" this means that when you hover over a python import, vim automatically
-" opens that file
+" this means that when the cursor is over a python import, and
+"  you hit gf vim automatically opens that file
 python << EOF
 import os
 import sys
