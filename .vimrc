@@ -125,4 +125,18 @@ set tags+=$HOME/.vim/tags/python.ctags
 map <silent><C-Left> <C-T>
 map <silent><C-Right> <C-]>
 
+" finally a bunch of shortcuts
+" http://sontek.net/dotfiles/vimrc (John M. Anderson's vimrc)
+" was quite the inspiration ;)
+
+function! EatChar(pat)
+    let c = nr2char(getchar(0))
+    return (c =~ a:pat) ? '' : c
+endfunc
+
+iabbr _me Jürgen Geuter (tante@the-gay-bar.com)=EatChar('\s')<CR>
+iabbr _t  <C-R>=strftime("%H:%M")<CR><C-R>=EatChar('\s')<CR>
+iabbr _d  <C-R>=strftime("%a, %d %b %Y")<CR><C-R>=EatChar('\s')<CR>
+iabbr _dt <C-R>=strftime("%a, %d %b %Y %H:%M")<CR><C-R>=EatChar('\s')<CR>
+
 
