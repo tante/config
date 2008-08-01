@@ -1,0 +1,4 @@
+(if 
+    (is (application_name) "evolution") 
+    (set_workspace 2)
+)

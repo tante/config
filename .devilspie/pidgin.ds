@@ -1,0 +1,12 @@
+(if 
+    (is (application_name) "Pidgin") 
+        (begin
+                (if 
+                    (is (window_role) "buddy_list")
+                        (begin
+                                (skip_tasklist)
+                        )
+                )
+                ( pin )
+        )
+)
