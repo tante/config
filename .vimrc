@@ -128,6 +128,13 @@ set tags+=$HOME/.vim/tags/python.ctags
 map <silent><C-Left> <C-T>
 map <silent><C-Right> <C-]>
 
+" make Vim transparently read .gpg files
+au BufNewFile,BufReadPre *.gpg :set secure viminfo= noswapfile nobackup nowritebackup history=0 binary
+au BufReadPost *.gpg :%!gpg -d 2>/dev/null
+au BufWritePre *.gpg :%!gpg -e -r 74CD65AB 2>/dev/null
+au BufWritePost *.gpg u
+
+
 " finally a bunch of shortcuts
 " http://sontek.net/dotfiles/vimrc (John M. Anderson's vimrc)
 " was quite the inspiration ;)
@@ -145,5 +152,3 @@ iabbr _dt <C-R>=strftime("%a, %d %b %Y %H:%M")<CR><C-R>=EatChar('\s')<CR>
 
 "python
 iabbr _pyutf # -*- coding: utf8 -*-
-
-
