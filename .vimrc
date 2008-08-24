@@ -79,12 +79,12 @@ set laststatus=2
 " map F8 to toggle taglist
 nnoremap <silent><F8> :TlistToggle<CR>
 
+" map <F3> to html-ify a given document
+map <silent><F3> :so $VIMRUNTIME/syntax/2html.vim<CR> 
+
 " map <F4> to clear highlighted searches
 " (those markers can be really irritating ;))
 map <silent><F4> :nohlsearch<CR>
-
-" map <F5> to html-ify a given document
-map <silent><F3> :so $VIMRUNTIME/syntax/2html.vim<CR> 
 
 " map ALT-Left and ALT-Right to move between tabs
 map <silent><A-Right> :tabnext<CR>
