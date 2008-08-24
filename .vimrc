@@ -83,6 +83,9 @@ nnoremap <silent><F8> :TlistToggle<CR>
 " (those markers can be really irritating ;))
 map <silent><F4> :nohlsearch<CR>
 
+" map <F5> to html-ify a given document
+map <silent><F3> :so $VIMRUNTIME/syntax/2html.vim<CR> 
+
 " map ALT-Left and ALT-Right to move between tabs
 map <silent><A-Right> :tabnext<CR>
 map <silent><A-Left> :tabprevious<CR>
