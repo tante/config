@@ -165,4 +165,7 @@ iabbr _d  <C-R>=strftime("%a, %d %b %Y")<CR><C-R>=EatChar('\s')<CR>
 iabbr _dt <C-R>=strftime("%a, %d %b %Y %H:%M")<CR><C-R>=EatChar('\s')<CR>
 
 "python
-iabbr _pyutf # -*- coding: utf8 -*-
+iabbr _pyutf # -*- coding: utf8 -*-<CR>
+
+" latex
+iabbr _glos \glossary{name={},description={<++>}}<Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left>
