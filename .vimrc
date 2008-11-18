@@ -78,6 +78,7 @@ set laststatus=2
 "
 " map F8 to toggle taglist
 nnoremap <silent><F8> :TlistToggle<CR>
+nnoremap <silent><F7> :NERDTreeToggle<CR>
 
 " map <F3> to html-ify a given document
 map <silent><F3> :so $VIMRUNTIME/syntax/2html.vim<CR> 
