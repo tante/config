@@ -6,6 +6,10 @@ set nocompatible
 autocmd Filetype html,xhtml,xml,xsl,htmldjango source ~/.vim/scripts/closetag.vim
 let g:closetag_html_style=1
 
+"global backup and swp dirs
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swp//
+
 " dictionaries for words
 set dictionary=/usr/share/dict/words,/usr/share/dict/web2,/usr/share/dict/extra.words
 
