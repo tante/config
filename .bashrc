@@ -39,7 +39,26 @@ export PATH=$PATH:~/bin/:
 
 export GPGKEY=74CD65AB
 shopt -s checkwinsize
-export PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] "
+
+#prompt
+RED="\[\033[0;31m\]" 
+YELLOW="\[\033[0;33m\]" 
+GREEN="\[\033[0;32m\]"
+BLUE="\[\033[01;34m\]"
+NORMAL="\[\033[00m\]"
+
+
+function parse_git_branch {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+    echo "("${ref#refs/heads/}")" 
+}
+function parse_git_dirty {
+  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "$RED[dirty]$NORMAL"
+  }
+
+export PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \w$YELLOW \$(parse_git_branch)$BLUE\$$NORMAL "
+
+#export PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] "
 
 #environment to speed intel GMA up
 export INTEL_BATCH=1
