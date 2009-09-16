@@ -3,7 +3,7 @@ set nocompatible
 
 " Automatic tag closing for html and xml (closetag plugin)
 " <Ctrl>_ automatically closes XML tags then. Useful.
-autocmd Filetype html,xhtml,xml,xsl,htmldjango source ~/.vim/scripts/closetag.vim
+autocmd Filetype '',html,xhtml,xml,xsl,htmldjango source ~/.vim/scripts/closetag.vim
 let g:closetag_html_style=1
 
 "global backup and swp dirs
@@ -152,7 +152,7 @@ map <silent><C-Right> <C-]>
 " make Vim transparently read .gpg files
 au BufNewFile,BufReadPre *.gpg :set secure viminfo= noswapfile nobackup nowritebackup history=0 binary
 au BufReadPost *.gpg :%!gpg -d 2>/dev/null
-au BufWritePre *.gpg :%!gpg -e -r 74CD65AB 2>/dev/null
+au BufWritePre *.gpg :%!gpg -e -r 41E3EF4E 2>/dev/null
 au BufWritePost *.gpg u
 
 
