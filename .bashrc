@@ -66,4 +66,5 @@ export INTEL_BATCH=1
 alias open="gnome-open"
 # currently my gvim is borked, it only works in non-forking
 # mode so I alias "gvim" to "gvim -f"
-alias gvim="gvim -f"
+#alias gvim="gvim -f"
+
