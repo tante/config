@@ -1,0 +1,37 @@
+[giggle]
+	compact-mode = false
+	main-window-maximized = false
+	main-window-geometry = 881x688+1497+185
+	history-view-vpane-position = 194
+	main-window-view = HistoryView
+
+
+[user]
+	name = Jürgen Geuter
+	email = tante@the-gay-bar.com
+    signingkey = 41E3EF4E
+
+[diff]
+    color = auto
+    rename = copy 
+
+[pager]
+    color = true 
+
+[status]
+    color = auto
+
+[diff "image"]
+    textconv = pic2txt
+
+[diff "pdf"]
+    textconv = pdf2txt
+
+[diff "zip"]
+    textconv = unzip -c -a
+
+[github]
+	user = tante
+	token = 595375d28080b1e460788a2169c836e8
+[push]
+	default = matching

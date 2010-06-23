@@ -6,6 +6,9 @@ set nocompatible
 autocmd Filetype '',html,xhtml,xml,xsl,htmldjango source ~/.vim/scripts/closetag.vim
 let g:closetag_html_style=1
 
+" PythonOmnicomplete
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+
 "global backup and swp dirs
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swp//
