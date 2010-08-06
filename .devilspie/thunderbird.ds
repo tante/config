@@ -1,4 +1,4 @@
 (if 
-    (is (application_name) "thunderbird") 
+    (contains (application_name) "Thunderbird") 
     (set_workspace 4)
 )
