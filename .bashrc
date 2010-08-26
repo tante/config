@@ -68,3 +68,5 @@ alias open="gnome-open"
 # mode so I alias "gvim" to "gvim -f"
 #alias gvim="gvim -f"
 
+export LANG=en_US.UTF-8
+export EDITOR=/usr/bin/vim
