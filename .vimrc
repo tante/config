@@ -9,9 +9,9 @@ let g:closetag_html_style=1
 " PythonOmnicomplete
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 
-"global backup and swp dirs
-set backupdir=~/.vim/backup//
-set directory=~/.vim/swp//
+" No more backup or swap
+set nobackup
+set noswapfile
 
 " dictionaries for words
 set dictionary=/usr/share/dict/words,/usr/share/dict/web2,/usr/share/dict/extra.words
