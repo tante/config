@@ -152,6 +152,11 @@ set tags+=$HOME/.vim/tags/python.ctags
 map <silent><C-Left> <C-T>
 map <silent><C-Right> <C-]>
 
+" Highlight parts of lines longer than 79 columns
+au filetype python highlight OverLength ctermbg=darkgreen ctermfg=white guibg=black
+au filetype python match OverLength /\%80v.\+/
+
+
 " make Vim transparently read .gpg files
 au BufNewFile,BufReadPre *.gpg :set secure viminfo= noswapfile nobackup nowritebackup history=0 binary
 au BufReadPost *.gpg :%!gpg -d 2>/dev/null
