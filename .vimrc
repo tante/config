@@ -80,7 +80,9 @@ let c_comment_strings=1
 set linebreak
 
 " Better status bar
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L] 
+set statusline=%F%m%r%h%w
+set statusline+=\ %{fugitive#statusline()}
+set statusline+=\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L] 
 set laststatus=2 
 
 " Better Supertab setup
