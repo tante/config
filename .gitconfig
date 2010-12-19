@@ -31,8 +31,5 @@
 [diff "zip"]
     textconv = unzip -c -a
 
-[github]
-	user = tante
-	token = 595375d28080b1e460788a2169c836e8
 [push]
 	default = matching
