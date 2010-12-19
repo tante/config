@@ -12,6 +12,9 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 " show me the 5 lines below the one I am typing in
 set scrolloff=5
 
+" show words as I change them
+set cpoptions=$
+
 " No more backup or swap
 set nobackup
 set noswapfile
