@@ -161,7 +161,7 @@ map <silent><C-Left> <C-T>
 map <silent><C-Right> <C-]>
 
 " Highlight parts of lines longer than 79 columns
-if version < 730
+if version < 703
    au filetype python highlight OverLength ctermbg=darkgreen ctermfg=white guibg=black
    au filetype python match OverLength /\%80v.\+/
 else
