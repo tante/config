@@ -161,8 +161,12 @@ map <silent><C-Left> <C-T>
 map <silent><C-Right> <C-]>
 
 " Highlight parts of lines longer than 79 columns
-au filetype python highlight OverLength ctermbg=darkgreen ctermfg=white guibg=black
-au filetype python match OverLength /\%80v.\+/
+if version < 730
+   au filetype python highlight OverLength ctermbg=darkgreen ctermfg=white guibg=black
+   au filetype python match OverLength /\%80v.\+/
+else
+   set colorcolumn=80
+endif
 
 
 " make Vim transparently read .gpg files
