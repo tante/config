@@ -44,8 +44,8 @@ set nu
 set incsearch
 
 " don't make it look like there are line breaks where there aren't:
-" set textwidth=79
-" set nowrap
+set textwidth=0
+"set nowrap
 " Note: actually wordwrap and auto-linebreaking mess up a few things so better 
 " leave it disabled by default
 
