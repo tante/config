@@ -19,6 +19,8 @@ setopt APPEND_HISTORY
 unsetopt BG_NICE		# do NOT nice bg commands
 setopt CORRECT			# command CORRECTION
 setopt EXTENDED_HISTORY		# puts timestamps in the history
+setopt sharehistory
+setopt incappendhistory
 # setopt HASH_CMDS		# turns on hashing
 setopt PROMPT_SUBST
 #
@@ -59,8 +61,8 @@ zmodload -a zsh/zprof zprof
 PATH="$PATH:~/bin/"
 TZ="Europe/Berlin"
 HISTFILE=$HOME/.zhistory
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 HOSTNAME="`hostname`"
 PAGER='less'
 EDITOR='vim'
