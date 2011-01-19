@@ -1,0 +1,4 @@
+(if 
+    (contains (application_name) "terminator") 
+    (geometry "700x500")
+)
