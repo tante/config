@@ -8,25 +8,25 @@ if [[ -n "$st" ]]; then
     arr=(${(f)st})
 
     if [[ $arr[1] =~ 'Not currently on any branch.' ]]; then
-        export __CURRENT_GIT_BRANCH='no-branch'
+        __CURRENT_GIT_BRANCH='no-branch'
     else
-        export __CURRENT_GIT_BRANCH="${arr[1][(w)4]}";
+        __CURRENT_GIT_BRANCH="${arr[1][(w)4]}";
     fi
 
     if [[ $arr[2] =~ 'Your branch is' ]]; then
         if [[ $arr[2] =~ 'ahead' ]]; then
-            export __CURRENT_GIT_BRANCH_STATUS='ahead'
+            __CURRENT_GIT_BRANCH_STATUS='ahead'
         elif [[ $arr[2] =~ 'diverged' ]]; then
-            export __CURRENT_GIT_BRANCH_STATUS='diverged'
+            __CURRENT_GIT_BRANCH_STATUS='diverged'
         else
-            export __CURRENT_GIT_BRANCH_STATUS='behind'
+            __CURRENT_GIT_BRANCH_STATUS='behind'
         fi
     else
-        export __CURRENT_GIT_BRANCH_STATUS=
+        __CURRENT_GIT_BRANCH_STATUS=
     fi
 
     if [[ ! $st =~ 'nothing to commit' ]]; then
-        export __CURRENT_GIT_BRANCH_IS_DIRTY='1'
+        __CURRENT_GIT_BRANCH_IS_DIRTY='1'
     fi
 fi
 
