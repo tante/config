@@ -76,9 +76,6 @@ set softtabstop=4
 " auto indentation
 set autoindent
 
-" I highlight strings inside C comments
-let c_comment_strings=1
-
 " make sure linebreaks don't mess up words
 set linebreak
 
