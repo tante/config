@@ -6,6 +6,7 @@
 # 
 ######################################################################
 
+
 # next lets set some enviromental/shell pref stuff up
 # setopt NOHUP
 #setopt NOTIFY
