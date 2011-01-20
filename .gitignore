@@ -1,3 +1,4 @@
 *.netrwhist*
 *.ipython/*
 *.py[c,o]
+.fonts/font*
