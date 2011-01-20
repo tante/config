@@ -1,1 +1,3 @@
-*.pyc
+*.netrwhist*
+*.ipython/*
+*.py[c,o]
