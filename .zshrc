@@ -86,6 +86,13 @@ PROMPT=$'[$PR_BLUE%n$PR_WHITE@$PR_GREEN%m%u$PR_NO_COLOR:$PR_RED%2c$PR_NO_COLOR]%
 ECHANGELOG_USER="Jürgen Geuter (tante) <tante@the-gay-bar.com>"
 GPGKEY=41E3EF4E
 
+#Now for the title
+case $TERM in 
+    (xterm*)
+        function precmd () { print -Pn "\e]0;%n@%m:%~\a" } 
+        ;;
+esac
+
 # Intel GMA fixes
 INTEL_BATCH=1    
 unsetopt ALL_EXPORT
