@@ -95,6 +95,9 @@ esac
 
 # Intel GMA fixes
 INTEL_BATCH=1    
+# export python interpreter config
+export PYTHONSTARTUP=~/.pystartup
+
 unsetopt ALL_EXPORT
 
 # # --------------------------------------------------------------------
