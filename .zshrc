@@ -41,11 +41,13 @@ chpwd_functions+='chpwd_update_git_vars'
 setopt ALL_EXPORT
 
 # Set/unset  shell options
-setopt   notify globdots correct pushdtohome cdablevars autolist
-setopt   correctall autocd recexact longlistjobs
-setopt   autoresume histignoredups pushdsilent 
-setopt   autopushd pushdminus extendedglob rcquotes mailwarning
+#setopt   notify globdots correct pushdtohome cdablevars autolist
+#setopt   correctall autocd recexact longlistjobs
+#setopt   autoresume histignoredups pushdsilent 
+#setopt   autopushd pushdminus extendedglob rcquotes mailwarning
+setopt   notify correct autolist autocd histignoredups
 unsetopt bgnice autoparamslash
+
 
 # Autoload zsh modules when they are referenced
 zmodload -a zsh/stat stat
