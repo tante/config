@@ -112,10 +112,10 @@ alias grep='grep --colour=auto'
 autoload -U compinit
 compinit
 bindkey "^?" backward-delete-char
-# bindkey ';5D' beginning-of-line
 bindkey "^[OH" beginning-of-line #Pos1
 bindkey "^[OF" end-of-line             # End
-#bindkey ';5C' end-of-line
+bindkey "^[[3~" delete-char
+bindkey    "^[3;5~"         delete-char
 bindkey "^r" history-incremental-search-backward
 bindkey ' ' magic-space    # also do history expansion on space
 bindkey '^I' complete-word # complete on tab, leave expansion to _expand
