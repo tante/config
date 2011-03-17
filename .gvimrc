@@ -1,2 +1,2 @@
 colorscheme desert
-set gfn=Inconsolata\ 10
+set gfn=Inconsolata\ 12
