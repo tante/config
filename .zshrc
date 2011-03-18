@@ -87,6 +87,7 @@ LANG='en_US.UTF-8'
 PROMPT=$'[$PR_BLUE%n$PR_WHITE@$PR_GREEN%m%u$PR_NO_COLOR:$PR_RED%2c$PR_NO_COLOR]% $(prompt_git_info) %(!.#.$) '
 ECHANGELOG_USER="Jürgen Geuter (tante) <tante@the-gay-bar.com>"
 GPGKEY=41E3EF4E
+SCIPY_PIL_IMAGE_VIEWER=eog
 
 #Now for the title
 case $TERM in 
