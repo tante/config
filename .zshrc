@@ -60,7 +60,7 @@ zmodload -a zsh/zprof zprof
 ##
 # Environment
 # #
-PATH="~/bin/:$PATH:"
+PATH="/home/tante/bin/:$PATH:"
 TZ="Europe/Berlin"
 HISTFILE=$HOME/.zhistory
 HISTSIZE=10000
