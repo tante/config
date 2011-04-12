@@ -114,7 +114,9 @@ autoload -U compinit
 compinit
 bindkey "^?" backward-delete-char
 bindkey "^[OH" beginning-of-line #Pos1
+bindkey "^[[1;5d" beginning-of-line
 bindkey "^[OF" end-of-line             # End
+bindkey "^[[1;5d" end-of-line
 bindkey "^[[3~" delete-char
 bindkey    "^[3;5~"         delete-char
 bindkey "^r" history-incremental-search-backward
