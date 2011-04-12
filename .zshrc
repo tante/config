@@ -144,6 +144,9 @@ zstyle -e ':completion:*:approximate:*' max-errors \
 # insert all expansions for expand completer
 zstyle ':completion:*:expand:*' tag-order all-expansions
 
+# ignore dotfiles for correct
+zstyle ':completion::correct:*' ignored-patterns '.*'
+
 # formatting and messages
 zstyle ':completion:*' verbose yes
 zstyle ':completion:*:descriptions' format '%B%d%b'
