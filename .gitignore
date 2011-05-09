@@ -2,3 +2,4 @@
 *.ipython/*
 *.py[c,o]
 .fonts/font*
+*/cache/*
