@@ -85,10 +85,6 @@ set statusline+=\ %{fugitive#statusline()}
 set statusline+=\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L] 
 set laststatus=2 
 
-" Better Supertab setup
-let g:SuperTabContextDefaultCompletionType = "context"
-set completeopt=menuone,longest,preview
-
 " HOTKEYS
 "
 " map F8 to toggle taglist
@@ -135,6 +131,10 @@ let g:tex_flavor='latex'
 " enable real code completion for python
 " (needs vim to be build with python support)
 autocmd FileType python set omnifunc=pythoncomplete#Complete
+" Better Supertab setup
+let g:SuperTabContextDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+
 " remap the CTRL-X,CTRL-O to F2 
 inoremap <F2> <C-x><C-o>
 
