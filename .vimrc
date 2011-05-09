@@ -86,7 +86,8 @@ set statusline+=\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set laststatus=2 
 
 " Better Supertab setup
-let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
+let g:SuperTabContextDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
 
 " HOTKEYS
 "
