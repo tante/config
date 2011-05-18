@@ -18,7 +18,7 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 set scrolloff=5
 
 " show words as I change them
-set cpoptions=$
+set cpoptions=B$
 
 " No more backup or swap
 set nobackup
