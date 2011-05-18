@@ -12,7 +12,6 @@ git_bundles = [
   "git://github.com/nuclearsandwich/vim-latex.git",
   "git://github.com/fs111/pydoc.vim.git",
   "git://github.com/vim-scripts/pythoncomplete.git",
-  "git://github.com/kevinw/pyflakes-vim.git",
   "git://github.com/vim-scripts/closetag.vim.git",
   "git://github.com/vim-scripts/snipMate.git"
 ]
@@ -20,6 +19,7 @@ git_bundles = [
 vim_org_scripts = [
   ["IndexedSearch", "7062",  "plugin"],
   ["jquery",        "12107", "syntax"],
+  ["pyflakes","2441","ftplugin"],
 ]
 
 require 'fileutils'

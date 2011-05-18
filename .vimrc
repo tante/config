@@ -137,7 +137,7 @@ let g:tex_flavor='latex'
 " (needs vim to be build with python support)
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 " Better Supertab setup
-let g:SuperTabContextDefaultCompletionType = "context"
+let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 
 " remap the CTRL-X,CTRL-O to F2 
