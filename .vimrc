@@ -8,7 +8,7 @@ set nocompatible
 
 " Automatic tag closing for html and xml (closetag plugin)
 " <Ctrl>_ automatically closes XML tags then. Useful.
-autocmd Filetype '',html,xhtml,xml,xsl,htmldjango source ~/.vim/scripts/closetag.vim
+autocmd Filetype '',html,xhtml,xml,xsl,htmldjango source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
 let g:closetag_html_style=1
 
 " PythonOmnicomplete
