@@ -6,6 +6,9 @@ call pathogen#runtime_append_all_bundles()
 " get out of horrible vi-compatible mode
 set nocompatible
 
+" tab completion for command line
+set wildmenu
+
 " Automatic tag closing for html and xml (closetag plugin)
 " <Ctrl>_ automatically closes XML tags then. Useful.
 autocmd Filetype '',html,xhtml,xml,xsl,htmldjango source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
