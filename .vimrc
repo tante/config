@@ -12,7 +12,7 @@ set wildmenu
 " Automatic tag closing for html and xml (closetag plugin)
 " <Ctrl>_ automatically closes XML tags then. Useful.
 autocmd Filetype '',html,xhtml,xml,xsl,htmldjango source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
-let g:closetag_html_style=1
+let b:closetag_html_style=1
 
 " PythonOmnicomplete
 autocmd FileType python set omnifunc=pythoncomplete#Complete
