@@ -23,9 +23,11 @@ set scrolloff=5
 " show words as I change them
 set cpoptions=B$
 
+" Disable Search highlighting with ESC
+nnoremap <silent> <esc> :noh<return><esc>
+
 " No more backup or swap
 set nobackup
-set noswapfile
 
 " dictionaries for words
 set dictionary=/usr/share/dict/words,/usr/share/dict/web2,/usr/share/dict/extra.words
@@ -101,10 +103,6 @@ nnoremap <silent><F7> :NERDTreeToggle<CR>
 
 " map <F3> to html-ify a given document
 map <silent><F3> :so $VIMRUNTIME/syntax/2html.vim<CR> 
-
-" map <F4> to clear highlighted searches
-" (those markers can be really irritating ;))
-map <silent><F4> :nohlsearch<CR>
 
 " map ALT-Left and ALT-Right to move between tabs
 map <silent><A-Right> :tabnext<CR>
