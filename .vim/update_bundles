@@ -1,4 +1,3 @@
-#!/usr/bin/env ruby
 
 git_bundles = [ 
   "git://github.com/scrooloose/nerdtree.git",
@@ -18,6 +17,7 @@ git_bundles = [
 
 vim_org_scripts = [
   ["IndexedSearch", "7062",  "plugin"],
+  ["arduino",        "2654", "syntax"],
   ["jquery",        "12107", "syntax"],
   ["pyflakes","2441","ftplugin"],
 ]
