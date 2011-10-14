@@ -1,10 +1,11 @@
-" load pathogen
-filetype off 
+
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles() 
 
 " get out of horrible vi-compatible mode
 set nocompatible
+
+set term=ansi
 
 " tab completion for command line
 set wildmenu

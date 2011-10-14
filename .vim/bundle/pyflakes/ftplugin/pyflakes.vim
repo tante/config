@@ -135,6 +135,8 @@
             <td class="sidebarheader"><a href="/huh.php">Site Help</a></td>
         </tr>
 </table>
+<br>
+<g:plusone></g:plusone>
 
             <table width="172" cellpadding="0" cellspacing="0" border="0">
               <tr><td><img src="/images/spacer.gif" alt="" border="0" width="1" height="8"></td></tr>
@@ -322,6 +324,15 @@ download: I couldn't find the file you requested (src_id=2441), are you sure it 
   
   </tr>
 </table>
+
+<!-- for Google +1 button -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
 
 </body>
 </html>
