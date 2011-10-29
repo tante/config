@@ -1,11 +1,8 @@
-
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles() 
 
 " get out of horrible vi-compatible mode
 set nocompatible
-
-set term=ansi
 
 " tab completion for command line
 set wildmenu
@@ -56,9 +53,6 @@ set incsearch
 
 " don't make it look like there are line breaks where there aren't:
 set textwidth=0
-"set nowrap
-" Note: actually wordwrap and auto-linebreaking mess up a few things so better 
-" leave it disabled by default
 
 " Enable syntax highlighting
 if has("syntax")
@@ -103,7 +97,7 @@ nnoremap <silent><F8> :TlistToggle<CR>
 nnoremap <silent><F7> :NERDTreeToggle<CR>
 
 " map <F3> to html-ify a given document
-map <silent><F3> :so $VIMRUNTIME/syntax/2html.vim<CR> 
+map <silent><F2> :so $VIMRUNTIME/syntax/2html.vim<CR> 
 
 " map ALT-Left and ALT-Right to move between tabs
 map <silent><A-Right> :tabnext<CR>
@@ -119,12 +113,6 @@ noremap k gk
 map <F10> <Esc>:setlocal spell spelllang=en<CR>
 map <F11> <Esc>:setlocal spell spelllang=de<CR>
 map <F12> <Esc>:setlocal nospell<CR>
-
-"vim-latex stuff
-" IMPORTANT: grep will sometimes skip displaying the file name if you
-" search in a singe file. This will confuse Latex-Suite. Set your grep
-" program to always generate a file-name.
-set grepprg=grep\ -nH\ $*
 
 " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
@@ -143,7 +131,7 @@ let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 
 " remap the CTRL-X,CTRL-O to F2 
-inoremap <F2> <C-x><C-o>
+inoremap <F1> <C-x><C-o>
 
 " make "gf" go to a python import
 " this means that when the cursor is over a python import, and
@@ -157,14 +145,6 @@ for p in sys.path:
         vim.command(r"set path+=%s" % (p.replace(" ", r"\ ")))
 EOF
 
-" use the ctags file from my .vim folder from the standart library
-" this way I can jump into the code of a library function by hitting 
-" CTRL+] and get back by hitting CTRL+t
-set tags+=$HOME/.vim/tags/python.ctags
-" now set CTRL-Right to dive into the library and CTRL-Left to come back
-map <silent><C-Left> <C-T>
-map <silent><C-Right> <C-]>
-
 " Highlight parts of lines longer than 79 columns
 if version < 703
    au filetype python highlight OverLength ctermbg=darkgreen ctermfg=white guibg=black
@@ -172,14 +152,6 @@ if version < 703
 else
    set colorcolumn=80
 endif
-
-
-" make Vim transparently read .gpg files
-au BufNewFile,BufReadPre *.gpg :set secure viminfo= noswapfile nobackup nowritebackup history=0 binary
-au BufReadPost *.gpg :%!gpg -d 2>/dev/null
-au BufWritePre *.gpg :%!gpg -e -r 41E3EF4E 2>/dev/null
-au BufWritePost *.gpg u
-
 
 " finally a bunch of shortcuts
 " http://sontek.net/dotfiles/vimrc (John M. Anderson's vimrc)
@@ -190,14 +162,5 @@ function! EatChar(pat)
     return (c =~ a:pat) ? '' : c
 endfunc
 
-"general
-iabbr _me Jürgen Geuter (tante@the-gay-bar.com)=EatChar('\s')<CR>
-iabbr _t  <C-R>=strftime("%H:%M")<CR><C-R>=EatChar('\s')<CR>
-iabbr _d  <C-R>=strftime("%a, %d %b %Y")<CR><C-R>=EatChar('\s')<CR>
-iabbr _dt <C-R>=strftime("%a, %d %b %Y %H:%M")<CR><C-R>=EatChar('\s')<CR>
-
 "python
 iabbr _pyutf # -*- coding: utf8 -*-<CR>
-
-" latex
-iabbr _glos \glossary{name={},description={<++>}}<Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left>
