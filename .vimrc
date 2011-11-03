@@ -21,9 +21,6 @@ set scrolloff=5
 " show words as I change them
 set cpoptions=B$
 
-" Disable Search highlighting with ESC
-nnoremap <silent> <esc> :noh<return><esc>
-
 " No more backup or swap
 set nobackup
 
