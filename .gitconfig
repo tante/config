@@ -1,10 +1,10 @@
 [giggle]
 	compact-mode = false
-	main-window-maximized = false
-	main-window-geometry = 978x722+280+265
-	history-view-vpane-position = 280
+	main-window-maximized = true
+	main-window-geometry = 457x279+0+26
+	history-view-vpane-position = 700
 	main-window-view = HistoryView
-	file-view-vpane-position = 419
+	file-view-vpane-position = 929
 
 
 [user]
