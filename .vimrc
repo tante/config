@@ -48,6 +48,10 @@ set nu
 " enable incremental search
 set incsearch
 
+" put all those weird .swp and *~ files to /tmp
+set directory=/tmp/
+set backupdir=/tmp/
+
 " don't make it look like there are line breaks where there aren't:
 set textwidth=0
 
