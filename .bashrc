@@ -32,7 +32,7 @@ esac
 export HISTCONTROL=ignoredups
 
 export EDITOR=vim
-export ECHANGELOG_USER="Jürgen Geuter (tante) <tante@the-gay-bar.com>"
+export ECHANGELOG_USER="Juergen Geuter (tante) <tante@the-gay-bar.com>"
 
 # I want a bin folder in my home dir
 export PATH=$PATH:~/bin/:
@@ -69,4 +69,5 @@ alias open="gnome-open"
 #alias gvim="gvim -f"
 
 export LANG=en_US.UTF-8
+export LC_TIME=en_US.UTF-8
 export EDITOR=/usr/bin/vim

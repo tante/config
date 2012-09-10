@@ -19,7 +19,7 @@ setopt APPEND_HISTORY
 unsetopt BG_NICE		# do NOT nice bg commands
 setopt CORRECT			# command CORRECTION
 setopt EXTENDED_HISTORY		# puts timestamps in the history
-setopt sharehistory
+# setopt sharehistory
 setopt incappendhistory
 # setopt HASH_CMDS		# turns on hashing
 setopt PROMPT_SUBST
@@ -84,6 +84,7 @@ EDITOR='vim'
 RPS1="$PR_LIGHT_YELLOW(%D{%m-%d %H:%M})$PR_NO_COLOR"
 #LANGUAGE=
 LANG='en_US.UTF-8'
+LC_TIME="en_US.utf8"
 PROMPT=$'[$PR_BLUE%n$PR_WHITE@$PR_GREEN%m%u$PR_NO_COLOR:$PR_RED%2c$PR_NO_COLOR]% $(prompt_git_info) %(!.#.$) '
 ECHANGELOG_USER="Jürgen Geuter (tante) <tante@the-gay-bar.com>"
 GPGKEY=41E3EF4E
