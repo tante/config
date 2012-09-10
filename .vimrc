@@ -163,5 +163,19 @@ function! EatChar(pat)
     return (c =~ a:pat) ? '' : c
 endfunc
 
+function! DistractionFreeWriting()
+        colorscheme iawriter
+        set background=light
+        set gfn=Cousine:h14                " font to use
+        set lines=40 columns=100           " size of the editable area
+        set guioptions-=r                  " remove right scrollbar
+        set laststatus=0                   " don't show status line
+        set noruler                        " don't show ruler
+        "set fullscreen                     " go to fullscreen editing mode
+        silent !wmctrl -r :ACTIVE: -b add,fullscreen  # go to fullscreen
+        set linebreak                      " break the lines on words
+    endfunction
+
+
 "python
 iabbr _pyutf # -*- coding: utf8 -*-<CR>
