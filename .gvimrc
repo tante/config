@@ -1,8 +1,8 @@
 colorscheme desert
 let redhat = filereadable("/etc/redhat-release")
 if redhat
-    set gfn=Inconsolata\ 10
+    set gfn=Source\ Code\ Pro\ 10
 else
-    set gfn=Inconsolata\ 12
+    set gfn=Source\ Code\ Pro\ 12
 endif
 
