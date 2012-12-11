@@ -102,7 +102,7 @@
             <td class="sidebarheader"><a href="/docs.php">Documentation</a></td>
         </tr>
         <tr>
-            <td class="sidebarheader"><a href="/download.php">Download</a></td>
+            <td class="sidebarheader download"><a href="/download.php">Download</a></td>
         </tr>
     <tr>
         <td><img src="/images/spacer.gif" alt="" border="0" width="1" height="7"></td>
