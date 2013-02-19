@@ -1,3 +1,45 @@
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
+[submodule ".vim/bundle/fugitive"]
+	path = .vim/bundle/fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule ".vim/bundle/vim-git"]
+	path = .vim/bundle/vim-git
+	url = git://github.com/tpope/vim-git.git
+[submodule ".vim/bundle/vim-markdown"]
+	path = .vim/bundle/vim-markdown
+	url = git://github.com/tpope/vim-markdown.git
+[submodule ".vim/bundle/vim-surround"]
+	path = .vim/bundle/vim-surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule ".vim/bundle/vim-supertab"]
+	path = .vim/bundle/vim-supertab
+	url = git://github.com/tsaleh/vim-supertab.git
+[submodule ".vim/bundle/vim-matchit"]
+	path = .vim/bundle/vim-matchit
+	url = git://github.com/tsaleh/vim-matchit.git
+[submodule ".vim/bundle/vim-latex"]
+	path = .vim/bundle/vim-latex
+	url = git://github.com/nuclearsandwich/vim-latex.git
+[submodule ".vim/bundle/pydoc.vim"]
+	path = .vim/bundle/pydoc.vim
+	url = git://github.com/fs111/pydoc.vim.git
+[submodule ".vim/bundle/pythoncomplete"]
+	path = .vim/bundle/pythoncomplete
+	url = git://github.com/vim-scripts/pythoncomplete.git
+[submodule ".vim/bundle/closetag.vim"]
+	path = .vim/bundle/closetag.vim
+	url = git://github.com/vim-scripts/closetag.vim.git
+[submodule ".vim/bundle/snipMate"]
+	path = .vim/bundle/snipMate
+	url = git://github.com/vim-scripts/snipMate.git
+[submodule ".vim/bundle/jedi-vim"]
+	path = .vim/bundle/jedi-vim
+	url = git://github.com/davidhalter/jedi-vim.git
+[submodule ".vim/bundle/tagbar"]
+	path = .vim/bundle/tagbar
+	url = git://github.com/majutsushi/tagbar.git
+[submodule ".vim/bundle/vim-monokai"]
+	path = .vim/bundle/vim-monokai
+	url = git://github.com/sickill/vim-monokai.git
