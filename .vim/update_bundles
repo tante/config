@@ -6,7 +6,6 @@ git_bundles = [
   "git://github.com/tpope/vim-markdown.git",
   "git://github.com/tpope/vim-surround.git",
   "git://github.com/tsaleh/vim-supertab.git",
-  "git://github.com/tsaleh/vim-tcomment.git",
   "git://github.com/tsaleh/vim-matchit.git",
   "git://github.com/nuclearsandwich/vim-latex.git",
   "git://github.com/fs111/pydoc.vim.git",
@@ -14,6 +13,8 @@ git_bundles = [
   "git://github.com/vim-scripts/closetag.vim.git",
   "git://github.com/vim-scripts/snipMate.git",
   "git://github.com/davidhalter/jedi-vim.git",
+  "git://github.com/majutsushi/tagbar.git",
+  "git://github.com/sickill/vim-monokai.git",
 ]
 
 vim_org_scripts = [

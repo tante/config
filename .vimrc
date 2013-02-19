@@ -1,6 +1,8 @@
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles() 
 
+colorscheme Monokai
+
 " get out of horrible vi-compatible mode
 set nocompatible
 
@@ -94,8 +96,10 @@ set laststatus=2
 " HOTKEYS
 "
 " map F8 to toggle taglist
-nnoremap <silent><F8> :TlistToggle<CR>
+"nnoremap <silent><F8> :TlistToggle<CR>
+nmap <F8> :TagbarToggle<CR>
 nnoremap <silent><F7> :NERDTreeToggle<CR>
+
 
 " map <F3> to html-ify a given document
 map <silent><F2> :so $VIMRUNTIME/syntax/2html.vim<CR> 
