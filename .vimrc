@@ -2,6 +2,7 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles() 
 
+set t_Co=256
 colorscheme Monokai
 
 " get out of horrible vi-compatible mode
