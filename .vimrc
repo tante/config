@@ -5,6 +5,9 @@ call pathogen#runtime_append_all_bundles()
 set t_Co=256
 colorscheme Monokai
 
+" Set <leader> to ö on German Keyboard
+let mapleader = "ö"
+
 " get out of horrible vi-compatible mode
 set nocompatible
 
