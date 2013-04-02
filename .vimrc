@@ -2,6 +2,7 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles() 
 
+" Colors
 set t_Co=256
 colorscheme Monokai
 
@@ -13,6 +14,9 @@ set nocompatible
 
 " tab completion for command line
 set wildmenu
+
+" Powerline
+let g:Powerline_symbols = 'fancy' 
 
 " Automatic tag closing for html and xml (closetag plugin)
 " <Ctrl>_ automatically closes XML tags then. Useful.
