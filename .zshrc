@@ -108,8 +108,10 @@ unsetopt ALL_EXPORT
 # # aliases
 # # --------------------------------------------------------------------
 
-alias ls='ls --color=auto'                                                      
+alias ls='ls --color=auto'           
 alias grep='grep --colour=auto'
+# credit to HansHuebner https://twitter.com/HansHuebner/status/319910203346808832
+alias doch='sudo $(fc -ln -1)'
 
 autoload -U compinit
 compinit
