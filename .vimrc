@@ -144,8 +144,12 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 
-" remap the CTRL-X,CTRL-O to F2 
+" remap the CTRL-X,CTRL-O to F1 
 inoremap <F1> <C-x><C-o>
+
+" enable markdown Syntax Highlighting for .md files (I don't write Modula2)
+
+au BufNewFile,BufRead *.md  setf markdown
 
 " make "gf" go to a python import
 " this means that when the cursor is over a python import, and
