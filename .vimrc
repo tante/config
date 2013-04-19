@@ -96,6 +96,10 @@ set autoindent
 " make sure linebreaks don't mess up words
 set linebreak
 
+" Better Split handling
+set splitbelow
+set splitright
+
 " Better status bar
 set statusline=%F%m%r%h%w
 set statusline+=\ %{fugitive#statusline()}
