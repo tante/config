@@ -61,6 +61,7 @@ zmodload -a zsh/zprof zprof
 # Environment
 # #
 PATH="/home/tante/bin/:$PATH:"
+CLASSPATH=.:/home/tante/Library/jade.jar
 TZ="Europe/Berlin"
 HISTFILE=$HOME/.zhistory
 HISTSIZE=10000
@@ -110,7 +111,7 @@ unsetopt ALL_EXPORT
 
 alias ls='ls --color=auto'           
 alias grep='grep --colour=auto'
-# credit to HansHuebner https://twitter.com/HansHuebner/status/319910203346808832
+#credit to HansHuebner https://twitter.com/HansHuebner/status/319910203346808832
 alias doch='sudo $(fc -ln -1)'
 
 autoload -U compinit
