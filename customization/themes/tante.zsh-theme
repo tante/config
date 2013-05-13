@@ -1,6 +1,10 @@
 if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="green"; fi
 
-PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}:%{$fg[blue]%}%B%c/%b%{$reset_color%} $(git_prompt_info)%(!.#.$) '
+function collapse_pwd {
+    echo $(pwd | sed -e "s,^$HOME,~,")
+        }
+
+PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}%B@%{$fg[magenta]%}$HOST%b:%{$fg[blue]%}%B${PWD/#$HOME/~}%b%{$reset_color%} $(git_prompt_info)%(!.#.$) '
 RPROMPT='%{$fg[yellow]%}[%*]%{$reset_color%}'
 
 # git theming
