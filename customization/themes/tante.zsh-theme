@@ -4,7 +4,7 @@ function collapse_pwd {
     echo $(pwd | sed -e "s,^$HOME,~,")
         }
 
-PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}%B@%{$fg[magenta]%}%m%b:%{$fg[blue]%}%B${PWD/#$HOME/~}%b%{$reset_color%} $(git_prompt_info)%(!.#.$) '
+PROMPT='$(virtualenv_prompt_info)%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}%B@%{$fg[magenta]%}%m%b:%{$fg[blue]%}%B${PWD/#$HOME/~}%b%{$reset_color%} $(git_prompt_info)%(!.#.$) '
 RPROMPT='%{$fg[yellow]%}[%*]%{$reset_color%}'
 
 # git theming
