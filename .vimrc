@@ -17,6 +17,7 @@ set wildmenu
 
 " Powerline
 let g:Powerline_symbols = 'fancy' 
+set noshowmode    " disable mode display (powerline has that)
 
 " Automatic tag closing for html and xml (closetag plugin)
 " <Ctrl>_ automatically closes XML tags then. Useful.
