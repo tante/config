@@ -2,6 +2,9 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles() 
 
+"initialise powerline
+set rtp+=/home/tante/config/.vim/bundle/powerline/powerline/bindings/vim
+
 " Colors
 set t_Co=256
 colorscheme Monokai
