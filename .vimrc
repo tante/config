@@ -18,10 +18,6 @@ set nocompatible
 " tab completion for command line
 set wildmenu
 
-" Powerline
-let g:Powerline_symbols = 'fancy' 
-set noshowmode    " disable mode display (powerline has that)
-
 " Automatic tag closing for html and xml (closetag plugin)
 " <Ctrl>_ automatically closes XML tags then. Useful.
 autocmd Filetype '',html,xhtml,xml,xsl,htmldjango source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
@@ -218,3 +214,8 @@ func! WordProcessorMode()
   setlocal linebreak 
 endfu 
 com! WP call WordProcessorMode()
+
+
+" Powerline
+set noshowmode    " disable mode display (powerline has that)
+
