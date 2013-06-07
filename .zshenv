@@ -2,7 +2,8 @@
 setopt ALL_EXPORT
 
 PATH="/home/tante/bin/:$PATH:"
-CLASSPATH=.:/home/tante/Library/jade.jar:/home/tante/Library/:
+CLASSPATH=.:/home/tante/Library/jade.jar:/home/tante/Library/:/home/tante/Library/joda-time-2.2.jar:/home/tante/Library/guava-14.0.1.jar:/home/tante/Library/gson-2.2.4.jar
+
 TZ="Europe/Berlin"
 HOSTNAME="`hostname`"
 PAGER='less'
