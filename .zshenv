@@ -9,6 +9,7 @@ HOSTNAME="`hostname`"
 PAGER='less'
 EDITOR='vim'
 LC_ALL="en_US.UTF-8"
+LANG="en_US.UTF-8"
 ECHANGELOG_USER="Jürgen Geuter (tante) <tante@tante.cc>"
 GPGKEY=41E3EF4E
 SCIPY_PIL_IMAGE_VIEWER=eog
