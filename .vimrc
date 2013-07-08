@@ -1,6 +1,6 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#helptags()
-call pathogen#runtime_append_all_bundles() 
+call pathogen#infect() 
 
 "initialise powerline
 set rtp+=$HOME/config/.vim/bundle/powerline/powerline/bindings/vim
