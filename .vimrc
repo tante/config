@@ -15,6 +15,15 @@ let mapleader = "ö"
 " get out of horrible vi-compatible mode
 set nocompatible
 
+" use the mouse
+set mouse=a
+
+" disable arrow keys
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
 " tab completion for command line
 set wildmenu
 
