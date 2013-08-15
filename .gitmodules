@@ -93,7 +93,3 @@
 	path = .vim/bundle/YouCompleteMe
     url = https://github.com/Valloric/YouCompleteMe.git
     ignore = dirty
-
-[submodule ".vim/bundle/minibufexpl.vim"]
-	path = .vim/bundle/minibufexpl.vim
-	url = https://github.com/fholgado/minibufexpl.vim.git
