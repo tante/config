@@ -93,3 +93,6 @@
 	path = .vim/bundle/YouCompleteMe
     url = https://github.com/Valloric/YouCompleteMe.git
     ignore = dirty
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = .vim/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
