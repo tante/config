@@ -99,6 +99,3 @@
 [submodule ".vim/bundle/RelOps"]
 	path = .vim/bundle/RelOps
 	url = https://github.com/vim-scripts/RelOps.git
-[submodule ".vim/bundle/TabBar"]
-	path = .vim/bundle/TabBar
-	url = https://github.com/vim-scripts/TabBar.git
