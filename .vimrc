@@ -5,6 +5,9 @@ call pathogen#infect()
 "initialise powerline
 set rtp+=$HOME/config/.vim/bundle/powerline/powerline/bindings/vim
 
+" Encoding
+set encoding=utf8
+
 " Colors
 set t_Co=256
 colorscheme Monokai
@@ -19,10 +22,14 @@ set nocompatible
 set mouse=a
 
 " disable arrow keys
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
 
 " tab completion for command line
 set wildmenu
