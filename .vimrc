@@ -117,7 +117,7 @@ set splitbelow
 set splitright
 
 " Better status bar
-set statusline=%F%m%r%h%w
+"set statusline=%F%m%r%h%w
 "set statusline+=\ %{fugitive#statusline()}
 "set statusline+=\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L] 
 set laststatus=2 
