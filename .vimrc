@@ -118,8 +118,8 @@ set splitright
 
 " Better status bar
 set statusline=%F%m%r%h%w
-set statusline+=\ %{fugitive#statusline()}
-set statusline+=\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L] 
+"set statusline+=\ %{fugitive#statusline()}
+"set statusline+=\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L] 
 set laststatus=2 
 
 " HOTKEYS
@@ -235,3 +235,10 @@ com! WP call WordProcessorMode()
 " Powerline
 set noshowmode    " disable mode display (powerline has that)
 
+" Airline
+" Smarter Tab Line
+let g:airline#extensions#tabline#enabled = 1
+" use Powerline fonts
+let g:airline_powerline_fonts = 1
+" airline theme
+let g:airline_theme="molokai"
