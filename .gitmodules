@@ -95,3 +95,6 @@
 [submodule ".vim/bundle/RelOps"]
 	path = .vim/bundle/RelOps
 	url = https://github.com/vim-scripts/RelOps.git
+[submodule ".vim/bundle/vim-airline"]
+	path = .vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
