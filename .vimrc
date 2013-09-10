@@ -2,9 +2,6 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#helptags()
 call pathogen#infect() 
 
-"initialise powerline
-set rtp+=$HOME/config/.vim/bundle/powerline/powerline/bindings/vim
-
 " Encoding
 set encoding=utf8
 
