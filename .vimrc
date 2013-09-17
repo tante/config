@@ -140,10 +140,10 @@ noremap k gk
 
 
 "Spellchecking
-"F10: English, F11: Deutsch, F12: Off
-map <F10> <Esc>:setlocal spell spelllang=en<CR>
-map <F11> <Esc>:setlocal spell spelllang=de<CR>
-map <F12> <Esc>:setlocal nospell<CR>
+"F11: On, F12: Off
+set spelllang=en,de
+map <F11> <Esc>:set spell<CR>
+map <F12> <Esc>:set nospell<CR>
 
 " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
