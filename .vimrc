@@ -286,3 +286,6 @@ def RemoveBreakpoints():
 
 vim.command( "map <s-f7> :py RemoveBreakpoints()<cr>")
 EOF
+
+" Easymotion
+let g:EasyMotion_leader_key = '<Leader>'
