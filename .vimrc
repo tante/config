@@ -15,6 +15,9 @@ let mapleader = "ö"
 " get out of horrible vi-compatible mode
 set nocompatible
 
+" allow . to work on visual selections
+vnoremap . :norm.<cr>
+
 " use the mouse
 set mouse=a
 
