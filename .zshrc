@@ -39,7 +39,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git battery rsync screen pip django virtualenv virtualenvwrapper git-extras python)
+plugins=(git battery rsync screen pip django virtualenv virtualenvwrapper git-extras python mosh)
 
 source $ZSH/oh-my-zsh.sh
 
