@@ -117,15 +117,11 @@ set splitbelow
 set splitright
 
 " Better status bar
-"set statusline=%F%m%r%h%w
-"set statusline+=\ %{fugitive#statusline()}
-"set statusline+=\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L] 
 set laststatus=2 
 
 " HOTKEYS
 "
 " map F8 to toggle taglist
-"nnoremap <silent><F8> :TlistToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 nnoremap <silent><F7> :NERDTreeToggle<CR>
 
@@ -200,37 +196,8 @@ function! EatChar(pat)
     return (c =~ a:pat) ? '' : c
 endfunc
 
-function! DistractionFreeWriting()
-        colorscheme iawriter
-        set background=light
-        set gfn=Cousine:h14                " font to use
-        set lines=40 columns=100           " size of the editable area
-        set guioptions-=r                  " remove right scrollbar
-        set laststatus=0                   " don't show status line
-        set noruler                        " don't show ruler
-        "set fullscreen                     " go to fullscreen editing mode
-        silent !wmctrl -r :ACTIVE: -b add,fullscreen  # go to fullscreen
-        set linebreak                      " break the lines on words
-    endfunction
-
 "python
 iabbr _pyutf # -*- coding: utf8 -*-<CR>
-
-" Write mode
-func! WordProcessorMode() 
-  setlocal formatoptions=1 
-  setlocal noexpandtab 
-  map j gj 
-  map k gk
-  setlocal spell spelllang=en_us 
-  set thesaurus+=/home/tante/.vim/thesaurus/mthesaur.txt
-  set complete+=s
-"  set formatprg=par
-  setlocal wrap 
-  setlocal linebreak 
-endfu 
-com! WP call WordProcessorMode()
-
 
 " Powerline
 set noshowmode    " disable mode display (powerline has that)
