@@ -46,4 +46,5 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 # shell options
 setopt  notify correct autolist autocd histignoredups
-
+# load environment
+source $HOME/.zshenv 
