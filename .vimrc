@@ -7,7 +7,7 @@ set encoding=utf8
 
 " Colors
 set t_Co=256
-colorscheme Monokai
+colorscheme monokai
 
 " Set <leader> to ö on German Keyboard
 let mapleader = "ö"
