@@ -36,9 +36,6 @@
 [submodule ".vim/bundle/snipMate"]
 	path = .vim/bundle/snipMate
 	url = git://github.com/vim-scripts/snipMate.git
-[submodule ".vim/bundle/jedi-vim"]
-	path = .vim/bundle/jedi-vim
-	url = git://github.com/davidhalter/jedi-vim.git
 [submodule ".vim/bundle/tagbar"]
 	path = .vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
@@ -85,10 +82,6 @@
 [submodule ".vim/bundle/vimroom"]
 	path = .vim/bundle/vimroom
 	url = git://github.com/mikewest/vimroom.git
-[submodule ".vim/bundle/YouCompleteMe"]
-	path = .vim/bundle/YouCompleteMe
-    url = https://github.com/Valloric/YouCompleteMe.git
-    ignore = dirty
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
