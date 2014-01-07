@@ -34,6 +34,8 @@ set mouse=a
 " tab completion for command line
 set wildmenu
 
+filetype plugin on
+
 " Automatic tag closing for html and xml (closetag plugin)
 " <Ctrl>_ automatically closes XML tags then. Useful.
 autocmd Filetype '',html,xhtml,xml,xsl,htmldjango source ~/.vim/bundle/closetag.vim/plugin/closetag.vim

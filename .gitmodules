@@ -33,9 +33,6 @@
 [submodule ".vim/bundle/closetag.vim"]
 	path = .vim/bundle/closetag.vim
 	url = git://github.com/vim-scripts/closetag.vim.git
-[submodule ".vim/bundle/snipMate"]
-	path = .vim/bundle/snipMate
-	url = git://github.com/vim-scripts/snipMate.git
 [submodule ".vim/bundle/jedi-vim"]
 	path = .vim/bundle/jedi-vim
 	url = git://github.com/davidhalter/jedi-vim.git
