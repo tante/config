@@ -257,5 +257,6 @@ EOF
 " Easymotion
 let g:EasyMotion_leader_key = '<Leader>'
 
+" Set UltiSnip Trigger to CTRL-j to avoid YCL mixup
 let g:UltiSnipsExpandTrigger="<c-j>"
-
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
