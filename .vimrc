@@ -34,15 +34,10 @@ set mouse=a
 " tab completion for command line
 set wildmenu
 
-filetype plugin on
-
 " Automatic tag closing for html and xml (closetag plugin)
 " <Ctrl>_ automatically closes XML tags then. Useful.
 autocmd Filetype '',html,xhtml,xml,xsl,htmldjango source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
 let b:closetag_html_style=1
-
-" PythonOmnicomplete
-autocmd FileType python set omnifunc=pythoncomplete#Complete
 
 " show me the 5 lines below the one I am typing in
 set scrolloff=5
@@ -157,7 +152,7 @@ let g:tex_flavor='latex'
 
 " enable real code completion for python
 " (needs vim to be build with python support)
-autocmd FileType python set omnifunc=pythoncomplete#Complete
+"autocmd FileType python set omnifunc=pythoncomplete#Complete
 " Better Supertab setup
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
@@ -261,3 +256,6 @@ EOF
 
 " Easymotion
 let g:EasyMotion_leader_key = '<Leader>'
+
+let g:UltiSnipsExpandTrigger="<c-j>"
+
