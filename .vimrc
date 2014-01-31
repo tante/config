@@ -263,6 +263,12 @@ let g:EasyMotion_leader_key = '<Leader>'
 let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
 
+" latex helpers
+let g:tex_flavor='latex'
+let g:Tex_DefaultTargetFormat='pdf'
+let g:Tex_ViewRule_pdf='evince'
+let g:Tex_CompileRule_pdf='rubber --pdf'
+
 " Mappings to access buffers (don't use "\p" because a
 " delay before pressing "p" would accidentally paste).
 " \l       : list buffers
