@@ -48,3 +48,5 @@ source $ZSH/oh-my-zsh.sh
 setopt  notify correct autolist autocd histignoredups nocorrectall
 # load environment
 source $HOME/.zshenv 
+# enable vi-mode
+bindkey -v
