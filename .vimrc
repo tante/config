@@ -9,6 +9,9 @@ set encoding=utf8
 set t_Co=256
 colorscheme monokai
 
+" set font for gvim
+set gfn=Source\ Code\ Pro\ for\ Powerline\ 10
+
 " Set <leader> to ö on German Keyboard
 let mapleader = "ö"
 
