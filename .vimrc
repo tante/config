@@ -160,6 +160,9 @@ let g:tex_flavor='latex'
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 
+"omnifunc
+set omnifunc=syntaxcomplete#Complete
+
 " remap the CTRL-X,CTRL-O to F1 
 inoremap <F1> <C-x><C-o>
 

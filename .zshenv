@@ -1,7 +1,7 @@
 # Environment
 setopt ALL_EXPORT
 
-PATH="$HOME/bin/:$HOME/Dropbox/bin:$PATH:"
+PATH="$HOME/bin/:$HOME/Dropbox/bin:$HOME/gocode/bin/:$PATH:"
 CLASSPATH=.:/home/tante/Library/jade.jar:/home/tante/Library/:/home/tante/Library/joda-time-2.2.jar:/home/tante/Library/guava-14.0.1.jar:/home/tante/Library/gson-2.2.4.jar
 
 TZ="Europe/Berlin"
@@ -13,6 +13,8 @@ LANG="en_US.UTF-8"
 ECHANGELOG_USER="Jürgen Geuter (tante) <tante@tante.cc>"
 GPGKEY=41E3EF4E
 SCIPY_PIL_IMAGE_VIEWER=eog
+
+GOPATH=/home/tante/gocode
 
 # export python interpreter config
 export PYTHONSTARTUP=~/.pystartup
