@@ -110,3 +110,6 @@
 [submodule ".vim/bundle/vim-javascript"]
 	path = .vim/bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
+[submodule ".vim/bundle/tasklist.vim"]
+	path = .vim/bundle/tasklist.vim
+	url = https://github.com/vim-scripts/TaskList.vim.git
