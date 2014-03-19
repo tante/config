@@ -275,6 +275,13 @@ let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_ViewRule_pdf='evince'
 let g:Tex_CompileRule_pdf='rubber --pdf'
 
+" syntastic helpers
+let g:syntastic_mode_map = { 'mode': 'active',
+            \ 'active_filetypes': ['javascript',"json",'php',"go","python"],
+            \ 'passive_filetypes': [''] }
+
+
+
 " Mappings to access buffers (don't use "\p" because a
 " delay before pressing "p" would accidentally paste).
 " \l       : list buffers
@@ -294,3 +301,5 @@ nnoremap <Leader>7 :7b<CR>
 nnoremap <Leader>8 :8b<CR>
 nnoremap <Leader>9 :9b<CR>
 nnoremap <Leader>0 :10b<CR>
+
+
