@@ -12,8 +12,12 @@ LC_ALL="en_US.UTF-8"
 LANG="en_US.UTF-8"
 ECHANGELOG_USER="Jürgen Geuter (tante) <tante@tante.cc>"
 GPGKEY=41E3EF4E
-SCIPY_PIL_IMAGE_VIEWER=eog
 
+# Python stuff
+SCIPY_PIL_IMAGE_VIEWER=eog
+export WORKON_HOME="/home/tante/envs/"
+
+# Go stuff
 GOPATH=/home/tante/gocode
 
 # export python interpreter config
