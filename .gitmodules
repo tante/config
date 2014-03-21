@@ -107,9 +107,12 @@
 [submodule ".vim/bundle/vim-gocode"]
 	path = .vim/bundle/vim-gocode
 	url = git@github.com:Blackrush/vim-gocode.git
-[submodule ".vim/bundle/vim-javascript"]
-	path = .vim/bundle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
 [submodule ".vim/bundle/tasklist.vim"]
 	path = .vim/bundle/tasklist.vim
 	url = https://github.com/vim-scripts/TaskList.vim.git
+[submodule ".vim/bundle/vim-javascript-syntax"]
+	path = .vim/bundle/vim-javascript-syntax
+	url = https://github.com/jelera/vim-javascript-syntax.git
+[submodule ".vim/bundle/tern-for-vim"]
+	path = .vim/bundle/tern-for-vim
+	url = https://github.com/marijnh/tern_for_vim.git
