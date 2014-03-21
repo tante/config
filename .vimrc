@@ -2,6 +2,9 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#helptags()
 call pathogen#infect() 
 
+" get out of horrible vi-compatible mode
+set nocompatible
+
 " Encoding
 set encoding=utf8
 
@@ -15,8 +18,18 @@ set gfn=Source\ Code\ Pro\ for\ Powerline\ 10
 " Set <leader> to ö on German Keyboard
 let mapleader = "ö"
 
-" get out of horrible vi-compatible mode
-set nocompatible
+" some shortcuts
+" leader o to open
+nnoremap <Leader>o :CtrlP<CR>
+" leader w to save
+nnoremap <Leader>w :w<CR>
+"Copy & paste to system clipboard with leader p and Leader y
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
 
 " allow . to work on visual selections
 vnoremap . :norm.<cr>
