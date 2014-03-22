@@ -31,6 +31,10 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
+" map region expanding to v/C-v 
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
+
 " allow . to work on visual selections
 vnoremap . :norm.<cr>
 
