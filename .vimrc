@@ -91,6 +91,7 @@ set nu
 
 " enable incremental search
 set incsearch
+set hlsearch
 
 " put all those weird .swp and *~ files to /tmp
 set directory=/tmp/
@@ -199,13 +200,8 @@ for p in sys.path:
         vim.command(r"set path+=%s" % (p.replace(" ", r"\ ")))
 EOF
 
-" Highlight parts of lines longer than 79 columns
-if version < 703
-   au filetype python highlight OverLength ctermbg=darkgreen ctermfg=white guibg=black
-   au filetype python match OverLength /\%80v.\+/
-else
-   set colorcolumn=80
-endif
+" Highlight column 81
+set colorcolumn=81
 
 " finally a bunch of shortcuts
 " http://sontek.net/dotfiles/vimrc (John M. Anderson's vimrc)
