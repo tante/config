@@ -1,6 +1,6 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#helptags()
-call pathogen#infect() 
+call pathogen#infect()
 
 " get out of horrible vi-compatible mode
 set nocompatible
@@ -31,7 +31,7 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
-" map region expanding to v/C-v 
+" map region expanding to v/C-v
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
 
@@ -79,7 +79,7 @@ set wildmode=list:longest,full
 " Highlight matching parens
 set showmatch
 
-" don't do any automatic folding 
+" don't do any automatic folding
 set foldmethod=manual
 
 " display the current mode and partially-typed commands in the status line:
@@ -135,7 +135,7 @@ set splitbelow
 set splitright
 
 " Better status bar
-set laststatus=2 
+set laststatus=2
 
 " HOTKEYS
 "
@@ -145,7 +145,7 @@ nnoremap <silent><F7> :NERDTreeToggle<CR>
 
 
 " map <F3> to html-ify a given document
-map <silent><F2> :so $VIMRUNTIME/syntax/2html.vim<CR> 
+map <silent><F2> :so $VIMRUNTIME/syntax/2html.vim<CR>
 
 " map ALT-Left and ALT-Right to move between tabs
 map <silent><A-Right> :tabnext<CR>
@@ -181,7 +181,7 @@ set completeopt=menuone,longest,preview
 "omnifunc
 set omnifunc=syntaxcomplete#Complete
 
-" remap the CTRL-X,CTRL-O to F1 
+" remap the CTRL-X,CTRL-O to F1
 inoremap <F1> <C-x><C-o>
 
 " enable markdown Syntax Highlighting for .md files (I don't write Modula2)
@@ -314,5 +314,3 @@ nnoremap <Leader>7 :7b<CR>
 nnoremap <Leader>8 :8b<CR>
 nnoremap <Leader>9 :9b<CR>
 nnoremap <Leader>0 :10b<CR>
-
-
