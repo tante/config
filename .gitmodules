@@ -16,10 +16,6 @@
 [submodule ".vim/bundle/vim-supertab"]
 	path = .vim/bundle/vim-supertab
 	url = git://github.com/tsaleh/vim-supertab.git
-[submodule ".vim/bundle/vim-matchit"]
-	path = .vim/bundle/vim-matchit
-    url = git://github.com/tsaleh/vim-matchit.git
-    ignore = dirty
 [submodule ".vim/bundle/vim-latex"]
 	path = .vim/bundle/vim-latex
     url = git://github.com/nuclearsandwich/vim-latex.git
