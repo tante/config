@@ -38,8 +38,21 @@ vmap <C-v> <Plug>(expand_region_shrink)
 " allow . to work on visual selections
 vnoremap . :norm.<cr>
 
+" Map Goyo toggle to <Leader> + spacebar
+nnoremap <Leader><Space> :Goyo<CR>
+" Goyo Limelight integration
+function! GoyoBefore()
+  Limelight
+endfunction
+
+function! GoyoAfter()
+  Limelight!
+endfunction
+
+let g:goyo_callbacks = [function('GoyoBefore'), function('GoyoAfter')]
+
 " use the mouse
-set mouse=a
+" set mouse=a
 
 " disable arrow keys
 "map <up> <nop>
