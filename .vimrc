@@ -31,6 +31,10 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
+"Move between tabs with Shift+l/h
+noremap <S-l> gt
+noremap <S-h> gT
+
 " map region expanding to v/C-v
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
