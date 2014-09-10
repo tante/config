@@ -68,10 +68,6 @@
 [submodule ".vim/bundle/vim-expand-region"]
 	path = .vim/bundle/vim-expand-region
 	url = git://github.com/terryma/vim-expand-region.git
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
-    url = https://github.com/robbyrussell/oh-my-zsh.git
-    ignore = dirty
 [submodule ".vim/bundle/vimroom"]
 	path = .vim/bundle/vimroom
 	url = git://github.com/mikewest/vimroom.git
@@ -118,3 +114,6 @@
 [submodule ".vim/bundle/goyo.vim"]
 	path = .vim/bundle/goyo.vim
 	url = https://github.com/junegunn/goyo.vim.git
+[submodule "antigen"]
+	path = antigen
+	url = https://github.com/zsh-users/antigen.git
