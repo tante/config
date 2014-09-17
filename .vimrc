@@ -10,7 +10,9 @@ set encoding=utf8
 
 " Colors
 set t_Co=256
-colorscheme monokai
+"colorscheme monokai
+set background=dark
+colorscheme solarized
 
 " set font for gvim
 set gfn=Source\ Code\ Pro\ for\ Powerline\ 11
