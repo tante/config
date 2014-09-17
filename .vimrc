@@ -183,6 +183,7 @@ map <F12> <Esc>:set nospell<CR>
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
+let g:TeX_CompileRule_pdf = 'latexmk -pdf -pvc $*'
 
 " now some python stuff
 " a few things that also work:

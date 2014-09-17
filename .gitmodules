@@ -16,10 +16,6 @@
 [submodule ".vim/bundle/vim-supertab"]
 	path = .vim/bundle/vim-supertab
 	url = git://github.com/tsaleh/vim-supertab.git
-[submodule ".vim/bundle/vim-latex"]
-	path = .vim/bundle/vim-latex
-    url = git://github.com/nuclearsandwich/vim-latex.git
-    ignore = dirty
 [submodule ".vim/bundle/pydoc.vim"]
 	path = .vim/bundle/pydoc.vim
 	url = git://github.com/fs111/pydoc.vim.git
@@ -117,3 +113,9 @@
 [submodule "antigen"]
 	path = antigen
 	url = https://github.com/zsh-users/antigen.git
+[submodule ".vim/bundle/atp-vim"]
+	path = .vim/bundle/atp-vim
+	url = git://git.code.sf.net/p/atp-vim/code
+[submodule ".vim/bundle/Align"]
+	path = .vim/bundle/Align
+	url = git@github.com:vim-scripts/Align.git
