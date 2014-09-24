@@ -12,6 +12,7 @@ antigen theme /home/tante/config/customization/themes/tante.zsh-theme tantezsh
 antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle rupa/z
+antigen bundle https://github.com/jimhester/per-directory-history
 
 # Python Plugins
 antigen bundle pip
