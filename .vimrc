@@ -9,7 +9,7 @@ set nocompatible
 set encoding=utf8
 
 " Colors
-"set t_Co=256
+set t_Co=16
 "colorscheme monokai
 "let g:solarized_termcolors=256
 set background=dark
