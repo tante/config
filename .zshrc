@@ -24,4 +24,4 @@ antigen bundle jdavis/zsh-files
 # Shell customization
 setopt  notify correct autolist appendhistory autocd histignoredups nocorrectall extended_glob
 
-
+unalias rm
