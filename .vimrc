@@ -117,9 +117,6 @@ set hlsearch
 set directory=/tmp/
 set backupdir=/tmp/
 
-" don't make it look like there are line breaks where there aren't:
-set textwidth=0
-
 " Enable syntax highlighting
 if has("syntax")
     syntax on
@@ -147,6 +144,13 @@ set softtabstop=4
 " auto indentation
 set autoindent
 
+" softbreak text after 79 chars
+au BufRead,BufNewFile *.md,*.txt setlocal textwidth=79
+au BufRead,BufNewFile *.md,*.txt setlocal formatoptions+=t
+au BufRead,BufNewFile *.md,*.txt setlocal wm=2
+au BufRead,BufNewFile *.md,*.txt setlocal wrap linebreak nolist
+
+
 " make sure linebreaks don't mess up words
 set linebreak
 
@@ -170,6 +174,8 @@ map <silent><F2> :so $VIMRUNTIME/syntax/2html.vim<CR>
 " map ALT-Left and ALT-Right to move between tabs
 map <silent><A-Right> :tabnext<CR>
 map <silent><A-Left> :tabprevious<CR>
+
+" softwrap long lines
 
 " make navigation in wrapped lines more natural
 noremap j gj
