@@ -24,4 +24,7 @@ antigen bundle jdavis/zsh-files
 # Shell customization
 setopt  notify correct autolist appendhistory autocd histignoredups nocorrectall extended_glob
 
+# load local environment
+source $HOME/config/.zshenv
+
 unalias rm
