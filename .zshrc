@@ -19,9 +19,9 @@ antigen bundle pip
 antigen bundle python
 antigen bundle virtualenv
 
-antigen bundle jdavis/zsh-files
+#antigen bundle jdavis/zsh-files
 
 # Shell customization
 setopt  notify correct autolist appendhistory autocd histignoredups nocorrectall extended_glob
 
-unalias rm
+#unalias rm
