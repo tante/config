@@ -24,4 +24,7 @@ antigen bundle virtualenv
 # Shell customization
 setopt  notify correct autolist appendhistory autocd histignoredups nocorrectall extended_glob
 
-#unalias rm
+# load local environment
+source $HOME/config/.zshenv
+
+unalias rm
