@@ -26,5 +26,3 @@ setopt  notify correct autolist appendhistory autocd histignoredups nocorrectall
 
 # load local environment
 source $HOME/config/.zshenv
-
-unalias rm
