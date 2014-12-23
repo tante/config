@@ -122,3 +122,6 @@
 [submodule ".vim/bundle/vim-colors-solarized"]
 	path = .vim/bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule ".vim/bundle/vim-wordy"]
+	path = .vim/bundle/vim-wordy
+	url = https://github.com/reedes/vim-wordy
