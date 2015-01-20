@@ -6,7 +6,7 @@ antigen bundle robbyrussell/oh-my-zsh lib/
 
 # Antigen Theme
 # 
-antigen theme /home/tante/config/customization/themes/tante.zsh-theme tantezsh
+antigen theme /home/tante/config/customization/themes tante
 
 # Antigen Bundles
 antigen bundle git
