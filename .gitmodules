@@ -122,3 +122,6 @@
 [submodule ".vim/bundle/vim-wordy"]
 	path = .vim/bundle/vim-wordy
 	url = https://github.com/reedes/vim-wordy
+[submodule ".vim/bundle/vimlatex"]
+	path = .vim/bundle/vimlatex
+	url = git://github.com/nuclearsandwich/vim-latex.git

@@ -193,6 +193,10 @@ map <F12> <Esc>:set nospell<CR>
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
 let g:LatexBox_latexmk_options="-pdf"
+let Tex_FoldedSections=""
+let Tex_FoldedEnvironments=""
+let Tex_FoldedMisc=""
+
 " now some python stuff
 " a few things that also work:
 " :Pydoc re.sub gives the corresponding docs
