@@ -113,9 +113,6 @@
 [submodule "antigen"]
 	path = antigen
 	url = https://github.com/zsh-users/antigen.git
-[submodule ".vim/bundle/atp-vim"]
-	path = .vim/bundle/atp-vim
-	url = git://git.code.sf.net/p/atp-vim/code
 [submodule ".vim/bundle/Align"]
 	path = .vim/bundle/Align
 	url = git@github.com:vim-scripts/Align.git
