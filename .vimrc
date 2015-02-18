@@ -323,6 +323,10 @@ let g:syntastic_mode_map = { 'mode': 'active',
             \ 'active_filetypes': ['javascript',"json",'php',"go","python"],
             \ 'passive_filetypes': [''] }
 
+" Ultisnips hotkeys
+let g:UltiSnipsJumpForwardTrigger          <c-j>
+let g:UltiSnipsJumpBackwardTrigger         <c-k>
+let g:UltiSnipsExpandTrigger               <c-j>
 
 
 " Mappings to access buffers (don't use "\p" because a
