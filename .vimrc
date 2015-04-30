@@ -11,9 +11,7 @@ set encoding=utf8
 " Colors
 set t_Co=16
 colorscheme monokai
-"let g:solarized_termcolors=256
 "set background=dark
-"colorscheme solarized
 
 " set font for gvim
 set gfn=Source\ Code\ Pro\ for\ Powerline\ 11
@@ -59,7 +57,7 @@ endfunction
 let g:goyo_callbacks = [function('GoyoBefore'), function('GoyoAfter')]
 
 " use the mouse
-" set mouse=a
+set mouse=a
 
 " disable arrow keys
 "map <up> <nop>
@@ -248,6 +246,16 @@ iabbr _pyutf # -*- coding: utf8 -*-<CR>
 " Powerline
 set noshowmode    " disable mode display (powerline has that)
 
+" Vim for Writers
+" get word count
+function WordCount()
+    let s:old_status = v:statusmsg
+    exe "silent normal g\<c-g>"
+    let s:word_count = str2nr(split(v:statusmsg)[11])
+    let v:statusmsg = s:old_status
+    return s:word_count
+endfunction
+
 " Airline
 " Smarter Tab Line
 let g:airline#extensions#tabline#enabled = 1
@@ -256,7 +264,7 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 " use Powerline fonts
 let g:airline_powerline_fonts = 1
 " airline theme
-let g:airline_theme="molokai"
+"let g:airline_theme="molokai"
 
 " Vim pdb integration with F7/Shift-F7
 python << EOF
@@ -328,6 +336,13 @@ let g:syntastic_mode_map = { 'mode': 'active',
 "let g:UltiSnipsJumpBackwardTrigger         <c-k>
 "let g:UltiSnipsExpandTrigger               <c-j>
 
+" autosave
+let g:auto_save = 1
+let g:auto_save_in_insert_mode = 0 "do not save while in insert mode
+let g:auto_save_events = ["InsertLeave", "TextChanged"] "autosave when leaving insert mode
+
+
+
 
 " Mappings to access buffers (don't use "\p" because a
 " delay before pressing "p" would accidentally paste).
@@ -348,3 +363,4 @@ nnoremap <Leader>7 :7b<CR>
 nnoremap <Leader>8 :8b<CR>
 nnoremap <Leader>9 :9b<CR>
 nnoremap <Leader>0 :10b<CR>
+
