@@ -366,3 +366,6 @@ nnoremap <Leader>0 :10b<CR>
 
 " no automatic folding
 set nofoldenable
+
+"enable pep8
+let g:pep8_map='<leader>p8'
