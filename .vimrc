@@ -381,3 +381,6 @@ if 'VIRTUAL_ENV' in os.environ:
     activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
     execfile(activate_this, dict(__file__=activate_this))
 EOF
+
+" disable YCM for tex
+let g:ycm_filetype_blacklist = {'tex' : 1, 'latex': 1}
