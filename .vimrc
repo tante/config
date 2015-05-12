@@ -146,7 +146,7 @@ set autoindent
 au BufRead,BufNewFile *.md,*.txt setlocal textwidth=79
 au BufRead,BufNewFile *.md,*.txt setlocal formatoptions+=t
 au BufRead,BufNewFile *.md,*.txt setlocal wm=2
-au BufRead,BufNewFile *.md,*.txt setlocal wrap linebreak nolist
+au BufRead,BufNewFile *.md,*.txt setlocal linebreak nolist
 
 
 " make sure linebreaks don't mess up words
@@ -383,4 +383,4 @@ if 'VIRTUAL_ENV' in os.environ:
 EOF
 
 " disable YCM for tex
-let g:ycm_filetype_blacklist = {'tex' : 1, 'latex': 1}
+let g:ycm_filetype_blacklist = {'tex' : 1, 'latex': 1, 'markdown': 1}
