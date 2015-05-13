@@ -23,7 +23,6 @@ antigen bundle virtualenv
 
 # Shell customization
 setopt  notify correct autolist appendhistory autocd histignoredups nocorrectall extended_glob
-
 setopt inc_append_history # Add comamnds as they are typed, don't wait until shell exit
 setopt hist_expire_dups_first # when trimming history, lose oldest duplicates first
 

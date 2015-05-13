@@ -37,7 +37,7 @@ alias grep='grep --colour=auto'
 #credit to HansHuebner https://twitter.com/HansHuebner/status/319910203346808832
 alias doch='sudo $(fc -ln -1)'
 # thefuck integration
-alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+alias fuck='eval $(thefuck $(fc -aln|tail -2|head -n 1))'
 
 
 ##--------------------------------------------
