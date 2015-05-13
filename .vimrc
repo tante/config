@@ -331,18 +331,10 @@ let g:syntastic_mode_map = { 'mode': 'active',
             \ 'active_filetypes': ['javascript',"json",'php',"go","python"],
             \ 'passive_filetypes': [''] }
 
-" Ultisnips hotkeys
-"let g:UltiSnipsJumpForwardTrigger          <c-j>
-"let g:UltiSnipsJumpBackwardTrigger         <c-k>
-"let g:UltiSnipsExpandTrigger               <c-j>
-
-" autosave
-let g:auto_save = 1
-let g:auto_save_in_insert_mode = 0 "do not save while in insert mode
-let g:auto_save_events = ["InsertLeave", "TextChanged"] "autosave when leaving insert mode
-
-
-
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " Mappings to access buffers (don't use "\p" because a
 " delay before pressing "p" would accidentally paste).
@@ -383,4 +375,5 @@ if 'VIRTUAL_ENV' in os.environ:
 EOF
 
 " disable YCM for tex
-let g:ycm_filetype_blacklist = {'tex' : 1, 'latex': 1, 'markdown': 1}
+let g:ycm_filetype_blacklist = {'tex' : 1, 'latex': 1} ", 'markdown': 1}
+let g:ycm_register_as_syntastic_checker = 0
