@@ -375,5 +375,5 @@ if 'VIRTUAL_ENV' in os.environ:
 EOF
 
 " disable YCM for tex
-let g:ycm_filetype_blacklist = {'tex' : 1, 'latex': 1} ", 'markdown': 1}
+let g:ycm_filetype_blacklist = {'tex' : 1, 'latex': 1, 'markdown': 1}
 let g:ycm_register_as_syntastic_checker = 0
