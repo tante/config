@@ -246,16 +246,6 @@ iabbr _pyutf # -*- coding: utf8 -*-<CR>
 " Powerline
 set noshowmode    " disable mode display (powerline has that)
 
-" Vim for Writers
-" get word count
-function WordCount()
-    let s:old_status = v:statusmsg
-    exe "silent normal g\<c-g>"
-    let s:word_count = str2nr(split(v:statusmsg)[11])
-    let v:statusmsg = s:old_status
-    return s:word_count
-endfunction
-
 " Airline
 " Smarter Tab Line
 let g:airline#extensions#tabline#enabled = 1
@@ -377,3 +367,6 @@ EOF
 " disable YCM for tex
 let g:ycm_filetype_blacklist = {'tex' : 1, 'latex': 1, 'markdown': 1}
 let g:ycm_register_as_syntastic_checker = 0
+
+" add wordcount to airline
+let g:airline_section_z='%3p%% %{g:airline_symbols.linenr}%#__accent_bold#%4l%#__restore__#:%3c wc: %{wordCount#WordCount()}'

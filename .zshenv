@@ -1,7 +1,9 @@
 # Environment
 setopt ALL_EXPORT
 
-PATH="$HOME/bin/:$HOME/Dropbox/bin:$HOME/gocode/bin/:$PATH:"
+PATH="$HOME/bin/:$HOME/Dropbox/bin:/usr/local/heroku/bin:$HOME/gocode/bin/:$PATH:"
+
+
 # JAVA shit
 CLASSPATH=.:/home/tante/Library/jade.jar:/home/tante/Library/:/home/tante/Library/joda-time-2.2.jar:/home/tante/Library/guava-14.0.1.jar:/home/tante/Library/gson-2.2.4.jar
 # try to make Java Apps look less horrible
