@@ -119,3 +119,6 @@
 [submodule ".vim/bundle/wordCount.vim"]
 	path = .vim/bundle/wordCount.vim
 	url = git@github.com:ChesleyTan/wordCount.vim.git
+[submodule ".vim/bundle/DidYouMean.vim"]
+	path = .vim/bundle/DidYouMean.vim
+	url = https://github.com/EinfachToll/DidYouMean.git
