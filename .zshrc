@@ -5,8 +5,10 @@ source ~/config/antigen/antigen.zsh
 antigen bundle robbyrussell/oh-my-zsh lib/
 
 # Antigen Theme
-# 
 antigen theme /home/tante/config/customization/themes tante
+if [ $UID -eq 0 ]; then 
+    source /root/config/customization/themes/tante.zsh-theme ;
+fi 
 
 # Antigen Bundles
 antigen bundle git
