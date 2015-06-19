@@ -13,8 +13,10 @@ set t_Co=16
 colorscheme monokai
 "set background=dark
 
-" set font for gvim
 set gfn=Source\ Code\ Pro\ for\ Powerline\ 11
+
+"setup copy n paste
+set clipboard=unnamed
 
 " Set <leader> to ö on German Keyboard
 let mapleader = "ö"
