@@ -16,7 +16,7 @@ colorscheme monokai
 set gfn=Source\ Code\ Pro\ for\ Powerline\ 11
 
 "setup copy n paste
-set clipboard=unnamed
+set clipboard^=unnamed
 
 " Set <leader> to ö on German Keyboard
 let mapleader = "ö"

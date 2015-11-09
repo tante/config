@@ -27,8 +27,9 @@ export WORKON_HOME="/home/tante/envs/"
 # Go stuff
 GOPATH=/home/tante/gocode
 
-# export python interpreter config
-export PYTHONSTARTUP=~/.pystartup
+# virtualenvwrapper
+source /usr/bin/virtualenvwrapper.sh
+
 unsetopt ALL_EXPORT
 
 
