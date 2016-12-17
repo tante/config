@@ -28,7 +28,7 @@ export WORKON_HOME="/home/tante/envs/"
 GOPATH=/home/tante/gocode
 
 # virtualenvwrapper
-source /usr/bin/virtualenvwrapper.sh
+#source /usr/bin/virtualenvwrapper.sh
 
 unsetopt ALL_EXPORT
 

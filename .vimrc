@@ -13,7 +13,7 @@ set t_Co=16
 colorscheme monokai
 "set background=dark
 
-set gfn=Source\ Code\ Pro\ for\ Powerline\ 11
+set gfn=Source\ Code\ Pro\ for\ Powerline\ 16
 
 "setup copy n paste
 set clipboard^=unnamed
