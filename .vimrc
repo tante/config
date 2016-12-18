@@ -28,21 +28,9 @@ call SetupVAM()
 
 " ACTIVATING PLUGINS
 
-" OPTION 1, use VAMActivate
-"VAMActivate ""
-
-" OPTION 2: use call vam#ActivateAddons
-"call vam#ActivateAddons([PLUGIN_NAME], {})
-" use <c-x><c-p> to complete plugin names
-
-" OPTION 3: Create a file ~/.vim-scripts putting a PLUGIN_NAME into each line
+" OPTION 3: Create a file ~/.vim/plugins putting a PLUGIN_NAME into each line
 " See lazy loading plugins section in README.md for details
-call vam#Scripts('/home/tante/config/.vim/plugins', {'tag_regex': '.*'})
-
-"runtime bundle/vim-pathogen/autoload/pathogen.vim
-"call pathogen#helptags()
-"call pathogen#infect()
-
+call vam#Scripts("/home/tante/.vim/plugins", {'tag_regex': '.*'})
 
 " Encoding
 set encoding=utf8
