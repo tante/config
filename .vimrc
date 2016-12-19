@@ -41,7 +41,7 @@ set encoding=utf8
 "colorscheme monokai
 
 if $USER=="root"
-   colorscheme torte
+   colorscheme rockets-away
 else
    colorscheme monokai
 endif
