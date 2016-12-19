@@ -37,9 +37,14 @@ call vam#Scripts(scriptpath, {'tag_regex': '.*'})
 set encoding=utf8
 
 " Colors
-set t_Co=16
-colorscheme monokai
-"set background=dark
+"set t_Co=16
+"colorscheme monokai
+
+if $USER=="root"
+   colorscheme torte
+else
+   colorscheme monokai
+endif
 
 set gfn=Source\ Code\ Pro\ for\ Powerline\ 16
 
