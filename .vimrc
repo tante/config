@@ -30,7 +30,8 @@ call SetupVAM()
 
 " OPTION 3: Create a file ~/.vim/plugins putting a PLUGIN_NAME into each line
 " See lazy loading plugins section in README.md for details
-call vam#Scripts("/home/tante/.vim/plugins", {'tag_regex': '.*'})
+let scriptpath= expand('$HOME/.vim/plugins', 1)
+call vam#Scripts(scriptpath, {'tag_regex': '.*'})
 
 " Encoding
 set encoding=utf8
