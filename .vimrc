@@ -37,9 +37,14 @@ call vam#Scripts(scriptpath, {'tag_regex': '.*'})
 set encoding=utf8
 
 " Colors
-set t_Co=16
-colorscheme monokai
-"set background=dark
+"set t_Co=16
+"colorscheme monokai
+
+if $USER=="root"
+   colorscheme rockets-away
+else
+   colorscheme monokai
+endif
 
 set gfn=Source\ Code\ Pro\ for\ Powerline\ 16
 
@@ -89,23 +94,14 @@ let g:goyo_callbacks = [function('GoyoBefore'), function('GoyoAfter')]
 " use the mouse
 set mouse=a
 
-" disable arrow keys
-"map <up> <nop>
-"map <down> <nop>
-"map <left> <nop>
-"map <right> <nop>
-"imap <up> <nop>
-"imap <down> <nop>
-"imap <left> <nop>
-"imap <right> <nop>
-
 " tab completion for command line
 set wildmenu
 
-" Automatic tag closing for html and xml (closetag plugin)
-" <Ctrl>_ automatically closes XML tags then. Useful.
-autocmd Filetype '',html,xhtml,xml,xsl,htmldjango source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
-let b:closetag_html_style=1
+" vim-closetag config
+let g:closetag_filenames = "*.html,*.xhtml,*.xml,*.phtml"
+
+" don't let jedi-vim popup on .
+let g:jedi#popup_on_dot = 0
 
 " show me the 5 lines below the one I am typing in
 set scrolloff=5
