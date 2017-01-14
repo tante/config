@@ -1,8 +1,9 @@
 # Environment
 setopt ALL_EXPORT
 
-PATH="$HOME/bin/:$HOME/Dropbox/bin:/usr/local/heroku/bin:$HOME/gocode/bin/:$PATH:"
-
+PATH="$HOME/bin/:$HOME/Dropbox/bin:/usr/local/heroku/bin:$HOME/.local/bin/:$PATH:"
+# Add Go folder to path
+PATH="$PATH:$HOME/gocode/bin/:"
 # add PHP composer to path
 PATH=$PATH:$HOME/.composer/vendor/bin/:
 
