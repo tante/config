@@ -49,7 +49,7 @@ endif
 set gfn=Source\ Code\ Pro\ for\ Powerline\ 16
 
 "setup copy n paste
-set clipboard^=unnamed
+set clipboard=unnamedplus
 
 " Set <leader> to ö on German Keyboard
 let mapleader = "ö"
