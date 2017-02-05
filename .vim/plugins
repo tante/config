@@ -11,7 +11,7 @@
 "github:airblade/vim-gitgutter"
 "github:godlygeek/tabular"
 "github:nathanaelkane/vim-indent-guides"
-"github:Valloric/YouCompleteMe"
+"github:Shougo/neocomplete.vim"
 "github:kien/ctrlp.vim"
 "github:bronson/vim-trailing-whitespace"
 "github:Lokaltog/vim-easymotion"
