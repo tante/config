@@ -46,7 +46,7 @@ else
    colorscheme monokai
 endif
 
-set gfn=Source\ Code\ Pro\ for\ Powerline\ 16
+set gfn=Source\ Code\ Pro\ for\ Powerline\ 10
 
 "setup copy n paste
 set clipboard=unnamedplus
@@ -314,7 +314,7 @@ au BufNewFile,BufRead *.md  setf markdown
 " make "gf" go to a python import
 " this means that when the cursor is over a python import, and
 "  you hit gf vim automatically opens that file
-python << EOF
+python3 << EOF
 import os
 import sys
 import vim
@@ -352,7 +352,7 @@ let g:airline_powerline_fonts = 1
 "let g:airline_theme="molokai"
 
 " Vim pdb integration with F7/Shift-F7
-python << EOF
+python3 << EOF
 def SetBreakpoint():
     import re
     nLine = int( vim.eval( 'line(".")'))
@@ -448,7 +448,7 @@ set nofoldenable
 let g:pep8_map='<leader>p8'
 
 " Add the virtualenv's site-packages to vim path
-py << EOF
+python3 << EOF
 import os.path
 import sys
 import vim
