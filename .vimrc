@@ -448,16 +448,16 @@ set nofoldenable
 let g:pep8_map='<leader>p8'
 
 " Add the virtualenv's site-packages to vim path
-python3 << EOF
-import os.path
-import sys
-import vim
-if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    sys.path.insert(0, project_base_dir)
-    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
+"python3 << EOF
+"import os.path
+"import sys
+"import vim
+"if 'VIRTUAL_ENV' in os.environ:
+""    project_base_dir = os.environ['VIRTUAL_ENV']
+""    sys.path.insert(0, project_base_dir)
+""    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+""    execfile(activate_this, dict(__file__=activate_this))
+"EOF
 
 " disable YCM for tex
 let g:ycm_filetype_blacklist = {'tex' : 1, 'latex': 1, 'markdown': 1}

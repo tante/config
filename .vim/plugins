@@ -33,3 +33,4 @@
 "github:godlygeek/csapprox"
 "github:bling/vim-airline"
 "github:alvan/vim-closetag"
+"github:majutsushi/tagbar"
