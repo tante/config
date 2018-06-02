@@ -289,6 +289,8 @@ endif
 "let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
 "let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 
+" make ctrlp open new tabs not splits
+let g:ctrlp_open_new_file = 't'
 
 " now some python stuff
 " a few things that also work:
