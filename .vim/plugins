@@ -34,3 +34,5 @@
 "github:bling/vim-airline"
 "github:alvan/vim-closetag"
 "github:majutsushi/tagbar"
+"github:jlanzarotta/bufexplorer"
+"github:scrooloose/nerdtree"

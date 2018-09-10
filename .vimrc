@@ -97,6 +97,15 @@ set mouse=a
 " tab completion for command line
 set wildmenu
 
+"nerdtree customization
+let NERDTreeIgnore=['\.pyc$','\~$']
+nnoremap <C-F7> :NERDTreeToggle<CR>
+map <C-F7>: NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+"start Nerdtree automatically
+autocmd vimenter * NERDTree
+
 " vim-closetag config
 let g:closetag_filenames = "*.html,*.xhtml,*.xml,*.phtml"
 
@@ -189,7 +198,6 @@ set laststatus=2
 "
 " map F8 to toggle taglist
 nmap <F8> :TagbarToggle<CR>
-nnoremap <silent><F7> :NERDTreeToggle<CR>
 
 
 " map <F3> to html-ify a given document
