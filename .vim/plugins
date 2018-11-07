@@ -5,7 +5,7 @@
 "github:tpope/vim-fugitive"
 "github:tpope/vim-markdown"
 "github:tpope/vim-surround"
-"github:tsaleh/vim-supertab"
+"github:ervandew/supertab"
 "github:davidhalter/jedi-vim"
 "github:vim-scripts/jquery"
 "github:airblade/vim-gitgutter"
