@@ -101,10 +101,11 @@ set wildmenu
 let NERDTreeIgnore=['\.pyc$','\~$']
 nnoremap <C-F7> :NERDTreeToggle<CR>
 map <C-F7>: NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 "start Nerdtree automatically
 autocmd vimenter * NERDTree
+autocmd VimEnter * wincmd p
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " vim-closetag config
 let g:closetag_filenames = "*.html,*.xhtml,*.xml,*.phtml"
