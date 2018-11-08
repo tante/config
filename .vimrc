@@ -102,9 +102,10 @@ let NERDTreeIgnore=['\.pyc$','\~$']
 nnoremap <C-F7> :NERDTreeToggle<CR>
 map <C-F7>: NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
 "start Nerdtree automatically
 autocmd vimenter * NERDTree
+" unfocus Nerdtree
+autocmd VimEnter * wincmd p
 
 " vim-closetag config
 let g:closetag_filenames = "*.html,*.xhtml,*.xml,*.phtml"
