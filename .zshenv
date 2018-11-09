@@ -45,6 +45,8 @@ alias doch='sudo $(fc -ln -1)'
 # thefuck integration
 alias fuck='eval $(thefuck $(fc -aln|tail -2|head -n 1))'
 
+# unfuck GREP
+unset GREP_OPTIONS
 
 ##--------------------------------------------
 ## Functions
