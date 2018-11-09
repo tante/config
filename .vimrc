@@ -36,6 +36,9 @@ call vam#Scripts(scriptpath, {'tag_regex': '.*'})
 " Encoding
 set encoding=utf8
 
+" fix backspace for OSX
+set backspace=indent,eol,start
+
 " Colors
 "set t_Co=16
 "colorscheme monokai
@@ -67,9 +70,9 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
-"Move between tabs with Shift+l/h
-noremap <S-l> gt
-noremap <S-h> gT
+"Move between buffers with Shift+l/h
+noremap <S-l> :bn<CR>
+noremap <S-h> :bp<CR>
 
 " map region expanding to v/C-v
 vmap v <Plug>(expand_region_expand)
