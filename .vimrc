@@ -247,12 +247,6 @@ let g:ctrlp_open_new_file = 't'
 " enable real code completion for python
 " (needs vim to be build with python support)
 "autocmd FileType python set omnifunc=pythoncomplete#Complete
-" Better Supertab setup
-"let g:SuperTabDefaultCompletionType = "context"
-"set completeopt=menuone,longest,preview
-
-"omnifunc
-"set omnifunc=syntaxcomplete#Complete
 
 " remap the CTRL-X,CTRL-O to F1
 inoremap <F1> <C-x><C-o>
