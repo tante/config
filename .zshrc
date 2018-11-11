@@ -32,6 +32,8 @@ setopt hist_expire_dups_first # when trimming history, lose oldest duplicates fi
 
 
 unset GREP_OPTIONS
+# remove security question
+unalias rm
 
 # load local environment
 source $HOME/config/.zshenv
