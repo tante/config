@@ -35,3 +35,4 @@
 "github:majutsushi/tagbar"
 "github:jlanzarotta/bufexplorer"
 "github:scrooloose/nerdtree"
+"github:Chiel92/vim-autoformat"
