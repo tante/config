@@ -52,7 +52,11 @@ endif
 set gfn=Source\ Code\ Pro\ for\ Powerline\ 10
 
 "setup copy n paste
-set clipboard=unnamedplus
+if has('mac')
+    set clipboard=unnamed
+else
+    set clipboard=unnamedplus
+endif
 
 " Set <leader> to ö on German Keyboard
 let mapleader = "ö"
