@@ -37,3 +37,6 @@ unalias rm
 
 # load local environment
 source $HOME/config/.zshenv
+
+# disable bracketed paste because it's buggy
+zle -N bracketed-paste-magic
