@@ -40,3 +40,6 @@ source $HOME/config/.zshenv
 
 # disable bracketed paste because it's buggy
 zle -N bracketed-paste-magic
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

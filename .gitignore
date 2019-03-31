@@ -3,3 +3,4 @@
 *.py[c,o]
 .fonts/font*
 */cache/*
+.vim/vim-addons/*
