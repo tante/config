@@ -1,7 +1,7 @@
 CONFIG=$HOME/config
 
-FILES=".vimrc .vim .zshrc .zshenv .pystartup .gitconfig .gvimrc .gitignore"
-    
+FILES=(.vimrc .vim .zshrc .zshenv .pystartup .gitconfig .gvimrc .gitignore)
+
 # Special Treatment for oh-my-zsh-theme
 ln -f -s $CONFIG/customization/themes $CONFIG/oh-my-zsh/custom/
 
