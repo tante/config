@@ -41,6 +41,11 @@ export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin/:$PATH:"
 # ruby path
 export PATH="/usr/local/opt/ruby/bin/:/usr/local/lib/ruby/gems/2.5.0/bin/:$PATH"
 
+##---------------
+## HiRez Fixes
+##---------------
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+
 ##--------------------------------------------------------------------
 ## aliases
 ##--------------------------------------------------------------------
