@@ -45,4 +45,4 @@ zle -N bracketed-paste-magic
 export PATH="$PATH:$HOME/.rvm/bin"
 
 # add timestamp to prompt
-export PROMPT='%{$fg[yellow]%}[%D{%f/%m/%y} %D{%H:%M:%S}] '$PROMPT
+export PROMPT='%{$fg[yellow]%}[%D{%H:%M:%S}] '$PROMPT
