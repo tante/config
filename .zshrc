@@ -18,10 +18,11 @@ antigen bundle virtualenv
 antigen bundle jdavis/zsh-files
 
 # Antigen Theme
-antigen theme ~/config/customization/themes tante
-if [ $UID -eq 0 ]; then 
-    source /root/config/customization/themes/tante.zsh-theme ;
-fi
+#antigen theme ~/config/customization/themes tante
+#if [ $UID -eq 0 ]; then 
+#    source /root/config/customization/themes/tante.zsh-theme ;
+#fi
+antigen theme agnoster
 
 antigen apply
 
