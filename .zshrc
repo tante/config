@@ -23,7 +23,6 @@ antigen bundle jdavis/zsh-files
 #    source /root/config/customization/themes/tante.zsh-theme ;
 #fi
 antigen theme agnoster
-
 antigen apply
 
 # Shell customization
@@ -44,3 +43,6 @@ zle -N bracketed-paste-magic
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# add timestamp to prompt
+export PROMPT='%{$fg[yellow]%}[%D{%f/%m/%y} %D{%H:%M:%S}] '$PROMPT
