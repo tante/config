@@ -7,7 +7,7 @@
 "github:tpope/vim-surround"
 "github:davidhalter/jedi-vim"
 "github:vim-scripts/jquery"
-"github:Valloric/YouCompleteMe"
+"github:ycm-core/YouCompleteMe"
 "github:airblade/vim-gitgutter"
 "github:godlygeek/tabular"
 "github:nathanaelkane/vim-indent-guides"
