@@ -29,6 +29,9 @@ antigen theme bhilburn/powerlevel9k powerlevel9k
 # customize powerlevel9k
 VIRTUAL_ENV_DISABLE_PROMPT=1
 POWERLEVEL9K_SSH_ICON="\U1F4BB"
+
+POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND="red"
+
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv root_indicator time)
 
@@ -52,6 +55,3 @@ zle -N bracketed-paste-magic
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-
-# add timestamp to prompt
-export PROMPT='%{$fg[yellow]%}[%D{%H:%M:%S}] '$PROMPT
