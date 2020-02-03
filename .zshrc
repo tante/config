@@ -12,6 +12,7 @@ antigen bundle rupa/z
 
 # Python Plugins
 antigen bundle pip
+antigen bundle pipenv
 antigen bundle python
 antigen bundle virtualenv
 
@@ -22,7 +23,14 @@ antigen bundle jdavis/zsh-files
 #if [ $UID -eq 0 ]; then 
 #    source /root/config/customization/themes/tante.zsh-theme ;
 #fi
-antigen theme agnoster
+#antigen theme agnoster
+POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
+antigen theme bhilburn/powerlevel9k powerlevel9k
+# customize powerlevel9k
+VIRTUAL_ENV_DISABLE_PROMPT=1
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv root_indicator time)
+
 antigen apply
 
 # Shell customization
