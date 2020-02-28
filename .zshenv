@@ -1,4 +1,6 @@
 # Environment
+source /etc/profile
+
 setopt ALL_EXPORT
 
 PATH="$HOME/bin/:$HOME/Dropbox/bin:/usr/local/heroku/bin:$HOME/.local/bin/:$PATH:"
