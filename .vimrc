@@ -36,6 +36,28 @@ call vam#Scripts(scriptpath, {'tag_regex': '.*'})
 " Encoding
 set encoding=utf8
 
+"deoplete
+let g:deoplete#enable_at_startup = 1
+
+set completeopt=longest,menuone,preview
+
+function! s:check_back_space() abort "{{{
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction"}}}
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ deoplete#manual_complete()
+
+"inoremap <silent><expr> <TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+"ale config for integration with deoplete
+"call deoplete#custom#option('sources', {
+""\ '_': ['ale'],
+""\})
+"set omnifunc=ale#completion#OmniFunc
+
 " fix backspace for OSX
 set backspace=indent,eol,start
 
@@ -238,11 +260,11 @@ let Tex_FoldedEnvironments=""
 let Tex_FoldedMisc=""
 
 " Enable omni completion.
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+"autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+"autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+"autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+"autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+"autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " make ctrlp open new tabs not splits
 let g:ctrlp_open_new_file = 't'
@@ -352,25 +374,12 @@ EOF
 " Easymotion
 let g:EasyMotion_leader_key = '<Leader>'
 
-" Set UltiSnip Trigger to CTRL-j to avoid YCL mixup
-let g:UltiSnipsExpandTrigger="<c-j>"
-let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
-
 " latex helpers
 let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_ViewRule_pdf='evince'
 let g:Tex_CompileRule_pdf='rubber --pdf'
 
-" syntastic helpers
-let g:syntastic_mode_map = { 'mode': 'active',
-            \ 'active_filetypes': ['javascript',"json",'php',"go","python"],
-            \ 'passive_filetypes': [''] }
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 " Mappings to access buffers (don't use "\p" because a
 " delay before pressing "p" would accidentally paste).
@@ -410,9 +419,6 @@ let g:pep8_map='<leader>p8'
 ""    execfile(activate_this, dict(__file__=activate_this))
 "EOF
 
-" disable YCM for tex
-let g:ycm_filetype_blacklist = {'tex' : 1, 'latex': 1, 'markdown': 1}
-let g:ycm_register_as_syntastic_checker = 0
 
 " add wordcount to airline
 let g:airline_section_z='%3p%% %{g:airline_symbols.linenr}%#__accent_bold#%4l%#__restore__#:%3c wc: %{wordCount#WordCount()}'
