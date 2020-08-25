@@ -24,7 +24,14 @@ GPGKEY=41E3EF4E
 
 # Python stuff
 SCIPY_PIL_IMAGE_VIEWER=eog
-export WORKON_HOME="/home/tante/envs/"
+case "$OSTYPE" in
+    darwin*)
+        export WORKON_HOME="/Users/tante/envs/"
+    ;;
+    linux*)
+        export WORKON_HOME="/home/tante/envs/"
+    ;;
+esac
 
 # Go stuff
 GOPATH=/home/tante/gocode
