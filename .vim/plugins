@@ -42,3 +42,5 @@
 "github:roxma/vim-hug-neovim-rpc"
 "github:deoplete-plugins/deoplete-jedi"
 "github:carlitux/deoplete-ternjs"
+"github:Shougo/neco-syntax"
+"github:lvht/phpcd.vim"
