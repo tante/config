@@ -280,6 +280,8 @@ let g:ctrlp_open_new_file = 't'
 " remap the CTRL-X,CTRL-O to F1
 inoremap <F1> <C-x><C-o>
 
+autocmd BufWritePre *.py execute ':Black'
+
 " enable markdown Syntax Highlighting for .md files (I don't write Modula2)
 
 au BufNewFile,BufRead *.md  setf markdown

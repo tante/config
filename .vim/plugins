@@ -44,3 +44,4 @@
 "github:carlitux/deoplete-ternjs"
 "github:Shougo/neco-syntax"
 "github:lvht/phpcd.vim"
+"github:psf/black"
