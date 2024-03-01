@@ -66,7 +66,7 @@ set backspace=indent,eol,start
 "colorscheme monokai
 
 if $USER=="root"
-   colorscheme rockets-away
+   colorscheme elflord
 else
    colorscheme monokai
 endif

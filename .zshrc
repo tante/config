@@ -25,7 +25,7 @@ antigen bundle jdavis/zsh-files
 #fi
 #antigen theme agnoster
 POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
-antigen theme bhilburn/powerlevel9k powerlevel9k
+#antigen theme bhilburn/powerlevel9k powerlevel9k
 # customize powerlevel9k
 VIRTUAL_ENV_DISABLE_PROMPT=1
 POWERLEVEL9K_SSH_ICON="\U1F4BB"
@@ -53,7 +53,4 @@ source $HOME/config/.zshenv
 # disable bracketed paste because it's buggy
 zle -N bracketed-paste-magic
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
-export PATH="$HOME/.poetry/bin:$PATH"
+eval "$(starship init zsh)"

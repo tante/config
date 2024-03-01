@@ -8,16 +8,14 @@ PATH="$HOME/bin/:$HOME/Dropbox/bin:/usr/local/heroku/bin:$HOME/.local/bin/:$PATH
 PATH="$PATH:$HOME/gocode/bin/:"
 # add PHP composer to path
 PATH=$PATH:$HOME/.composer/vendor/bin/:
-
-# JAVA shit
-CLASSPATH=.:/home/tante/Library/jade.jar:/home/tante/Library/:/home/tante/Library/joda-time-2.2.jar:/home/tante/Library/guava-14.0.1.jar:/home/tante/Library/gson-2.2.4.jar
-# try to make Java Apps look less horrible
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
+# add cargo path
+PATH=$PATH:$HOME/.cargo/bin:
 
 TZ="Europe/Berlin"
 HOSTNAME="`hostname`"
 PAGER='less'
-EDITOR='vim'
+EDITOR='nvim'
+alias vim="nvim"
 LC_ALL="en_US.UTF-8"
 LANG="en_US.UTF-8"
 GPGKEY=41E3EF4E
@@ -46,13 +44,12 @@ unsetopt ALL_EXPORT
 ###--------------
 
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin/:$PATH:"
-# ruby path
-export PATH="/usr/local/opt/ruby/bin/:/usr/local/lib/ruby/gems/2.5.0/bin/:$PATH"
 
 ##---------------
 ## HiRez Fixes
 ##---------------
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export QT_QPA_PLATFORM=
 
 ##--------------------------------------------------------------------
 ## aliases
